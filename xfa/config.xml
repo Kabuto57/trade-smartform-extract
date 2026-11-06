@@ -1,0 +1,156 @@
+<config xmlns="http://www.xfa.org/schema/xci/2.8/"
+><agent name="designer"
+><!--  [0..n]  --><destination
+>pdf</destination
+><pdf
+><!--  [0..n]  --><fontInfo
+/></pdf
+></agent
+><present
+><!--  [0..n]  --><pdf
+><!--  [0..n]  --><version
+>1.7</version
+><adobeExtensionLevel
+>3</adobeExtensionLevel
+><renderPolicy
+>client</renderPolicy
+><creator
+>Adobe LiveCycle Designer 11.0</creator
+><producer
+>Adobe LiveCycle Designer 11.0</producer
+><scriptModel
+>XFA</scriptModel
+><interactive
+>1</interactive
+><tagged
+>0</tagged
+><fontInfo
+><embed
+>0</embed
+></fontInfo
+><encryption
+><encrypt
+>1</encrypt
+><encryptionLevel
+>128bit</encryptionLevel
+><permissions
+><accessibleContent
+>1</accessibleContent
+><contentCopy
+>1</contentCopy
+><documentAssembly
+>0</documentAssembly
+><formFieldFilling
+>1</formFieldFilling
+><modifyAnnots
+>1</modifyAnnots
+><print
+>1</print
+><printHighQuality
+>1</printHighQuality
+><change
+>0</change
+><plaintextMetadata
+>1</plaintextMetadata
+></permissions
+></encryption
+><compression
+><level
+>6</level
+><compressLogicalStructure
+>1</compressLogicalStructure
+><compressObjectStream
+>1</compressObjectStream
+></compression
+><linearized
+>1</linearized
+><silentPrint
+><addSilentPrint
+>0</addSilentPrint
+><printerName
+/></silentPrint
+><viewerPreferences
+><duplexOption
+>simplex</duplexOption
+><numberOfCopies
+>0</numberOfCopies
+><printScaling
+>appDefault</printScaling
+><pickTrayByPDFSize
+>0</pickTrayByPDFSize
+><enforce
+/><ADBE_JSDebugger
+>delegate</ADBE_JSDebugger
+><ADBE_JSConsole
+>delegate</ADBE_JSConsole
+><addViewerPreferences
+>0</addViewerPreferences
+></viewerPreferences
+></pdf
+><common
+><log
+><to
+>memory</to
+><mode
+>overwrite</mode
+></log
+><template
+><base
+>C:\vendor\Trade-Smartform.pdf</base
+></template
+></common
+><script
+><runScripts
+>server</runScripts
+></script
+><cache
+><macroCache
+/></cache
+><xdp
+><packets
+>*</packets
+></xdp
+><destination
+>pdf</destination
+><output
+><to
+>uri</to
+><uri
+>C:\vendor\Trade-Smartform.pdf</uri
+></output
+></present
+><psMap
+><font typeface="Calibri" psName="Calibri" weight="normal" posture="normal"
+/><font typeface="Calibri" psName="Calibri-Bold" weight="bold" posture="normal"
+/><font typeface="Calibri" psName="Calibri-Italic" weight="normal" posture="italic"
+/><font typeface="Calibri" psName="Calibri-BoldItalic" weight="bold" posture="italic"
+/><font typeface="Segoe UI" psName="SegoeUI" weight="normal" posture="normal"
+/></psMap
+><acrobat
+><acrobat7
+><dynamicRender
+>required</dynamicRender
+></acrobat7
+><common
+><versionControl sourceBelow="maintain"
+/><data
+><xsl
+><uri
+/></xsl
+><outputXSL
+><uri
+/></outputXSL
+></data
+><template
+><base
+>C:\vendor\Trade-Smartform.pdf</base
+><relevant
+/><uri
+/></template
+></common
+><autoSave
+/><validate
+>preSubmit</validate
+></acrobat
+></config
+>

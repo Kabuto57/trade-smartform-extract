@@ -1,0 +1,1277 @@
+section,path,event,language,lines,library_calls
+pageSet,form1.pageSet.Page1.#subform[0].txtLCDate,exit,JavaScript,9,controlScript.currentDate controlScript.dateFormatChange
+pageSet,form1.pageSet.Page1.#subform[0].txtLCDate,initialize,JavaScript,1,
+pageSet,form1.pageSet.Page1.#subform[0].Button1,calculate,JavaScript,910,
+pageSet,form1.pageSet.Page1.#subform[0].btnShowMainPage,click,JavaScript,17,
+pageSet,form1.pageSet.Page1.#subform[0].CurrentPage,ready ($layout),JavaScript,1,
+pageSet,form1.pageSet.Page1.#subform[0].PageCount,ready ($layout),JavaScript,1,
+pageSet,form1.pageSet.Page1.#subform[0].btnReset,click,JavaScript,71,controlScript.radioColorRemoveReset controlScript.resetInit controlScript.resetMandatoryBackColor controlScript.selectMandaotoryField
+pageSet,form1.pageSet.Page1.#subform[0].btnSave,click,JavaScript,1,
+pageSet,form1.pageSet.Page1.#subform[0].btnPrint,click,JavaScript,134,barcodeScript.LCbarcode controlScript.checkSum controlScript.dateFormatChangeMainPage controlScript.mandatoryCheckBE controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty fieldsCheck.checkBEEBLCMandatory fieldsCheck.checkBEGenericMandatory fieldsCheck.checkBEOBCMandatory
+pageSet,form1.pageSet.Page1.#subform[0].btnBEEBLC,click,JavaScript,18,controlScript.BEMapping_EBLC
+pageSet,form1.pageSet.Page1.#subform[0].btnBEOBC,click,JavaScript,18,controlScript.BEMapping_OBC
+pageSet,form1.pageSet.Page1.#subform[0].txtOBCDate,initialize,JavaScript,6,controlScript.accessChangeBE
+pageSet,form1.pageSet.Page1.#subform[0].txtOBCDate,exit,JavaScript,15,controlScript.accessChangeBE controlScript.currentDate controlScript.dateFormatChange
+pageSet,form1.pageSet.Page1.#subform[0].txtEBLCDate,exit,JavaScript,17,controlScript.accessChange controlScript.accessChangeBE controlScript.currentDate controlScript.dateFormatChange
+pageSet,form1.pageSet.Page1.#subform[0].txtEBLCDate,initialize,JavaScript,4,
+pageSet,form1.pageSet.Page1.#subform[0].btnEBLC,click,JavaScript,23,controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor
+pageSet,form1.pageSet.Page1.#subform[0].btnOBC,click,JavaScript,23,controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor
+pageSet,form1.pageSet.Page1.#subform[0].txtCheckSum,ready ($layout),JavaScript,2,controlScript.showCheckSumValue
+pageSet,form1.pageSet.Page1.#subform[0].txtDBRPDate,exit,JavaScript,7,controlScript.currentDate controlScript.dateFormatChange
+pageSet,form1.pageSet.Page1.#subform[0].txtDBRPDate,initialize,JavaScript,1,
+pageSet,form1.pageSet.Page1.#subform[0].txtLCADate,exit,JavaScript,6,controlScript.currentDate controlScript.dateFormatChange
+pageSet,form1.pageSet.Page1.#subform[0].txtLCADate,initialize,JavaScript,1,
+pageSet,form1.pageSet.Page1.#subform[0].NewFormHeader.btnShowMainPage,click,JavaScript,20,
+pageSet,form1.pageSet.Page1.#subform[0].NewFormHeader.btnReset,click,JavaScript,38,controlScript.radioColorRemoveReset controlScript.resetInit controlScript.resetMandatoryBackColor controlScript.selectMandaotoryField
+pageSet,form1.pageSet.Page1.#subform[0],initialize,JavaScript,1,
+pageSet,form1.pageSet.Page2.CurrentPage,ready ($layout),JavaScript,1,
+pageSet,form1.pageSet.Page2.PageCount,ready ($layout),JavaScript,1,
+pageSet,form1.pageSet.Page2.txtCheckSum,ready ($layout),JavaScript,3,controlScript.showCheckSumValue
+MainPage,form1.MainPage.BankCIFNo.txtBankCIFNo,change,JavaScript,1,controlScript.forceNumberOnly
+MainPage,form1.MainPage.subfrmBlankPage.Button4,click,JavaScript,2,
+MainPage,form1.MainPage.subfrmMain.#subform[0].#subform[0].btnLC,click,JavaScript,25,controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+MainPage,form1.MainPage.subfrmMain.#subform[0].#subform[0].btnLCA,click,JavaScript,26,controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+MainPage,form1.MainPage.subfrmMain.#subform[0].#subform[1].btnEBLC,click,JavaScript,27,controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+MainPage,form1.MainPage.subfrmMain.#subform[0].#subform[1].btnOBC,click,JavaScript,25,controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+MainPage,form1.MainPage.subfrmMain.#subform[0].#subform[1].btnBE,click,JavaScript,17,
+MainPage,form1.MainPage.subfrmMain.#subform[0].#subform[2].btnDBRP,click,JavaScript,25,controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+MainPage,form1.MainPage.subfrmMain.#subform[0].#subform[2].btnEXPORT,click,JavaScript,26,controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+MainPage,form1.MainPage.subfrmMain.#subform[0].#subform[3].btnBG,click,JavaScript,27,controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+MainPage,form1.MainPage.subfrmMain.#subform[0].#subform[3].btnSBLC,click,JavaScript,27,controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+MainPage,form1.MainPage.subfrmMain.#subform[0].#subform[3].btnBGA,click,JavaScript,27,controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+MainPage,form1.MainPage.subfrmMain.#subform[0].#subform[3].btnSBLCA,click,JavaScript,27,controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+MainPage,form1.MainPage.subfrmMain.Button3,click,JavaScript,16,
+MainPage,form1.MainPage.subfrmMain.Button3,click,JavaScript,16,
+MainPage,form1.MainPage.subfrmMain.txtLC,ready ($form),JavaScript,1,controlScript.currentDate
+MainPage,form1.MainPage.subfrmMain.txtEBLC,ready ($form),JavaScript,1,controlScript.currentDate
+MainPage,form1.MainPage.subfrmMain.txtOBC,ready ($form),JavaScript,1,controlScript.currentDate
+MainPage,form1.MainPage.subfrmMain.txtDBRP,ready ($form),JavaScript,1,controlScript.currentDate
+MainPage,form1.MainPage.subfrmMain.txtLCA,ready ($form),JavaScript,1,controlScript.currentDate
+MainPage,form1.MainPage.subfrmMain.txtSBLC,ready ($form),JavaScript,1,controlScript.currentDate
+MainPage,form1.MainPage.subfrmMain.txtSBLCA,ready ($form),JavaScript,1,controlScript.currentDate
+MainPage,form1.MainPage.subfrmMain.txtBG,ready ($form),JavaScript,1,controlScript.currentDate
+MainPage,form1.MainPage.subfrmMain.txtBGA,ready ($form),JavaScript,1,controlScript.currentDate
+MainPage,form1.MainPage.subfrmMain.txtEXPORT,ready ($form),JavaScript,1,controlScript.currentDate
+LC,form1.LC.subfrmLC.subfrmApplicant.txtName,full,JavaScript,3,
+LC,form1.LC.subfrmLC.subfrmApplicant.txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmApplicant.txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmApplicant.txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmApplicant.txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmApplicant.txtContractName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmApplicant.txtTel,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmApplicant.txtFax,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmForBankUse.subfrmForBankUse.subfrmDCNo.txtDCNo,initialize,JavaScript,1,
+LC,form1.LC.subfrmLC.subfrmForBankUse.subfrmForBankUse.subfrmDCNo.txtDCNo,change,JavaScript,1,controlScript.changeUpper
+LC,form1.LC.subfrmLC.subfrmForBankUse.subfrmForBankUse.subfrmBankCode.txtBankCode,initialize,JavaScript,1,
+LC,form1.LC.subfrmLC.subfrmForBankUse.subfrmForBankUse.subfrmBankCode.txtBankCode,change,JavaScript,1,controlScript.changeUpper
+LC,form1.LC.subfrmLC.subfrmForBankUse.subfrmAdvisingBank.txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmForBankUse.subfrmAdvisingBank.txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmForBankUse.subfrmAdvisingBank.txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmForBankUse.subfrmAdvisingBank.txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrm3PartyBeneficiary.txtName,full,JavaScript,3,
+LC,form1.LC.subfrmLC.subfrm3PartyBeneficiary.txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrm3PartyBeneficiary.txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrm3PartyBeneficiary.txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrm3PartyBeneficiary.txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmBeneficiary.txtName,full,JavaScript,3,
+LC,form1.LC.subfrmLC.subfrmBeneficiary.txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmBeneficiary.txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmBeneficiary.txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmBeneficiary.txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmBeneficiary.txtContractName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmBeneficiary.txtTel,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmBeneficiary.txtFax,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmCreditAmount.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+LC,form1.LC.subfrmLC.subfrmCreditAmount.drpCurrency,change,JavaScript,14,
+LC,form1.LC.subfrmLC.subfrmCreditAmount.txtAmount,exit,JavaScript,4,
+LC,form1.LC.subfrmLC.subfrmCreditAmount.chkTolerance,change,JavaScript,14,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmCreditAmount.chkTolerance,ready ($form),JavaScript,14,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmCreditAmount.txtPlusValue,exit,JavaScript,12,controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmCreditAmount.txtPlusValue,change,JavaScript,1,controlScript.changeUpper
+LC,form1.LC.subfrmLC.subfrmCreditAmount.txtMinusValue,exit,JavaScript,13,controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmCreditAmount.txtMinusValue,change,JavaScript,1,controlScript.changeUpper
+LC,form1.LC.subfrmLC.subfrmPriceBasis.RadioButtonList,change,JavaScript,132,controlScript.accessChange controlScript.mandatoryChange controlScript.presenceChange
+LC,form1.LC.subfrmLC.subfrmPriceBasis.RadioButtonList,ready ($form),JavaScript,104,controlScript.accessChange controlScript.mandatoryChange controlScript.presenceChange
+LC,form1.LC.subfrmLC.subfrmPriceBasis.txtOthers,change,JavaScript,1,controlScript.changeUpper
+LC,form1.LC.subfrmLC.subfrmPartialshipment.radPartialShipment,change,JavaScript,11,
+LC,form1.LC.subfrmLC.subfrmPartialshipment.radPartialShipment,ready ($form),JavaScript,10,
+LC,form1.LC.subfrmLC.subfrmPartialshipment.radTranshipment,change,JavaScript,11,
+LC,form1.LC.subfrmLC.subfrmPartialshipment.radTranshipment,ready ($form),JavaScript,10,
+LC,form1.LC.subfrmLC.subfrmShipmentFrom.drpPortOfLoading,change,JavaScript,43,controlScript.presenceChange
+LC,form1.LC.subfrmLC.subfrmShipmentFrom.drpPortOfLoading,initialize,JavaScript,43,controlScript.presenceChange
+LC,form1.LC.subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmPlaceOfReceipt.txtPlaceOfReceipt1,change,JavaScript,2,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmPlaceOfReceipt.txtPlaceOfReceipt2,change,JavaScript,5,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmPlaceOfTakingInCharge.txtPlaceOfTakingInCharge1,change,JavaScript,2,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmPlaceOfTakingInCharge.txtPlaceOfTakingInCharge2,change,JavaScript,5,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmDispatchfrom.txtDispatchfrom1,change,JavaScript,2,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmDispatchfrom.txtDispatchfrom2,change,JavaScript,5,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmPortOfLoad.txtLoading1,change,JavaScript,2,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmPortOfLoad.txtLoading2,change,JavaScript,5,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmAirportOfDeparture.txtDeparture1,change,JavaScript,2,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmAirportOfDeparture.txtDeparture2,change,JavaScript,5,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentTo.drpPortOfDischarge,change,JavaScript,40,controlScript.presenceChange
+LC,form1.LC.subfrmLC.subfrmShipmentTo.drpPortOfDischarge,initialize,JavaScript,40,controlScript.presenceChange
+LC,form1.LC.subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmForTransportationTo.txtForTransportationTo1,change,JavaScript,2,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmForTransportationTo.txtForTransportationTo2,change,JavaScript,5,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmDestination.txtDestination1,change,JavaScript,2,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmDestination.txtDestination2,change,JavaScript,5,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmPlaceOfFinalDestination.txtPlaceOfFinalDestination1,change,JavaScript,2,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmPlaceOfFinalDestination.txtPlaceOfFinalDestination2,change,JavaScript,5,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmPlaceOfDelivery.txtPlaceOfDelivery1,change,JavaScript,2,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmPlaceOfDelivery.txtPlaceOfDelivery2,change,JavaScript,5,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmDischarge.txtDischarge1,change,JavaScript,2,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmDischarge.txtDischarge2,change,JavaScript,5,controlScript.changeUpper controlScript.checkMaxLength
+LC,form1.LC.subfrmLC.subfrmShipmentDate.txtDate,exit,JavaScript,9,controlScript.dateCompare controlScript.dateFormatChange
+LC,form1.LC.subfrmLC.subfrmShipmentDate.txtDate,change,JavaScript,1,controlScript.changeUpper
+LC,form1.LC.subfrmLC.subfrmDateOfExpiry.txtDate,exit,JavaScript,8,controlScript.dateCompare controlScript.dateFormatChange
+LC,form1.LC.subfrmLC.subfrmDateOfExpiry.txtDate,change,JavaScript,1,controlScript.changeUpper
+LC,form1.LC.subfrmLC.subfrmPresentation.txtPeriod,change,JavaScript,1,controlScript.lengthLimit
+LC,form1.LC.subfrmLC.subfrmDrafts.subfrmBtoB.txtCrNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmDrafts.subfrmBtoB.txtIssuBy,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmDrafts.subfrmBtoB.chkBTB,change,JavaScript,13,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmDrafts.subfrmBtoB.chkBTB,ready ($form),JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmDrafts.sufrmDraft.chkDraft,change,JavaScript,26,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmDrafts.sufrmDraft.chkDraft,ready ($form),JavaScript,23,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmDrafts.sufrmDraft.radDrafts,change,JavaScript,16,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmDrafts.sufrmDraft.radDrafts,ready ($form),JavaScript,22,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmDrafts.sufrmDraft.txtTerm,change,JavaScript,2,controlScript.changeUpper controlScript.lengthLimit
+LC,form1.LC.subfrmLC.subfrmDrafts.sufrmDraft.txtTerm,exit,JavaScript,8,controlScript.plusNumeric
+LC,form1.LC.subfrmLC.subfrmDrafts.sufrmDraft.txtDaysAfter,change,JavaScript,1,controlScript.changeUpper
+LC,form1.LC.subfrmLC.subfrmDrafts.sufrmDraft.radTerm,change,JavaScript,14,controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmDrafts.sufrmDraft.txtDate,exit,JavaScript,8,controlScript.dateCompare controlScript.dateFormatChange
+LC,form1.LC.subfrmLC.subfrmDrafts.sufrmDraft.txtDate,change,JavaScript,1,controlScript.changeUpper
+LC,form1.LC.subfrmLC.subfrmDrafts.chkFullSet,change,JavaScript,42,controlScript.accessChange controlScript.concatValue controlScript.mandatoryChange controlScript.radioMandatoryCheck
+LC,form1.LC.subfrmLC.subfrmDrafts.chkFullSet,ready ($form),JavaScript,28,controlScript.accessChange controlScript.mandatoryChange controlScript.radioMandatoryCheck
+LC,form1.LC.subfrmLC.subfrmDrafts.txtFullSet,change,JavaScript,1,controlScript.changeUpper
+LC,form1.LC.subfrmLC.subfrmDrafts.radConsignee,change,JavaScript,9,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmDrafts.radConsignee,ready ($form),JavaScript,9,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmDrafts.radFreight,change,JavaScript,20,
+LC,form1.LC.subfrmLC.subfrmDrafts.txtNotifyParty,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmOriginalAirWaybill.chkOriginalAirWaybill,change,JavaScript,33,controlScript.accessChange controlScript.concatValue controlScript.mandatoryChange controlScript.radioMandatoryCheck
+LC,form1.LC.subfrmLC.subfrmOriginalAirWaybill.chkOriginalAirWaybill,ready ($form),JavaScript,29,controlScript.accessChange controlScript.mandatoryChange controlScript.radioMandatoryCheck
+LC,form1.LC.subfrmLC.subfrmOriginalAirWaybill.radioButtonList,change,JavaScript,17,
+LC,form1.LC.subfrmLC.subfrmOriginalAirWaybill.txtNotifyParty,change,JavaScript,3,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLC.subfrmTransportDocumentsByDO.chkDeliveryOrderIn,change,JavaScript,25,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmTransportDocumentsByDO.chkDeliveryOrderIn,ready ($form),JavaScript,18,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmTransportDocumentsByDO.txtOriginals,change,JavaScript,2,controlScript.changeUpper controlScript.lengthLimit
+LC,form1.LC.subfrmLC.subfrmTransportDocumentsByDO.txtOriginals,exit,JavaScript,6,controlScript.plusNumeric
+LC,form1.LC.subfrmLC.subfrmTransportDocumentsByDO.txtCopies,change,JavaScript,2,controlScript.changeUpper controlScript.lengthLimit
+LC,form1.LC.subfrmLC.subfrmTransportDocumentsByDO.txtCopies,exit,JavaScript,6,controlScript.plusNumeric
+LC,form1.LC.subfrmLC.subfrmTransportDocumentsByDO.drpCountersignedBy,change,JavaScript,1,controlScript.changeUpper
+LC,form1.LC.subfrmLC.subfrmTransportDocumentsByDO.drpWhoseSignature,change,JavaScript,1,controlScript.changeUpper
+LC,form1.LC.subfrmLC.subfrmInsurance.drpForFOBCFR,change,JavaScript,18,controlScript.mandatoryChange controlScript.presenceChange
+LC,form1.LC.subfrmLC.subfrmInsurance.drpForFOBCFR,ready ($form),JavaScript,15,controlScript.mandatoryChange controlScript.presenceChange
+LC,form1.LC.subfrmLC.subfrmInsurance.subfrmCoverNo.txtCoverNo,change,JavaScript,1,controlScript.changeUpper
+LC,form1.LC.subfrmLC.subfrmInsurance.subfrmCoverNo.txtWith,change,JavaScript,1,controlScript.changeUpper
+LC,form1.LC.subfrmLC.subfrmBeneficiaryCertificate.chkBeneficiaryCertificate,change,JavaScript,21,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmBeneficiaryCertificate.chkBeneficiaryCertificate,ready ($form),JavaScript,26,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmBeneficiaryCertificate.chkFaxed,change,JavaScript,14,controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmBeneficiaryCertificate.chkMailed,change,JavaScript,14,controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmBeneficiaryCertificate.chkCouriered,change,JavaScript,14,controlScript.mandatoryChange
+LC,form1.LC.subfrmLC.subfrmBeneficiaryCertificate.txtDaysAfterShipment,change,JavaScript,2,controlScript.changeUpper controlScript.lengthLimit
+LC,form1.LC.subfrmLC.subfrmBeneficiaryCertificate.txtDaysAfterShipment,exit,JavaScript,11,errorMessage.plusNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.chkSignedCommercialInvoice,change,JavaScript,15,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.chkSignedCommercialInvoice,ready ($form),JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtSignedOriginals,change,JavaScript,3,controlScript.changeUpper controlScript.lengthLimit controlScript.validateRegularExpNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtSignedOriginals,exit,JavaScript,6,controlScript.plusNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtSignedCopies,change,JavaScript,3,controlScript.changeUpper controlScript.lengthLimit controlScript.validateRegularExpNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtSignedCopies,exit,JavaScript,6,controlScript.plusNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.chkPackingList,change,JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.chkPackingList,ready ($form),JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtPackingListOriginals,change,JavaScript,3,controlScript.changeUpper controlScript.lengthLimit controlScript.validateRegularExpNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtPackingListOriginals,exit,JavaScript,7,controlScript.plusNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtPackingListCopies,change,JavaScript,3,controlScript.changeUpper controlScript.lengthLimit controlScript.validateRegularExpNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtPackingListCopies,exit,JavaScript,6,controlScript.plusNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.chkWeightNote,change,JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.chkWeightNote,ready ($form),JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtWeightNoteOriginals,change,JavaScript,3,controlScript.changeUpper controlScript.lengthLimit controlScript.validateRegularExpNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtWeightNoteOriginals,exit,JavaScript,6,controlScript.plusNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtWeightNoteCopies,change,JavaScript,3,controlScript.changeUpper controlScript.lengthLimit controlScript.validateRegularExpNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtWeightNoteCopies,exit,JavaScript,6,controlScript.plusNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.chkCertificateOfOrigin,change,JavaScript,17,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.chkCertificateOfOrigin,ready ($form),JavaScript,14,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtCertificateOfOriginInOriginals,change,JavaScript,3,controlScript.changeUpper controlScript.lengthLimit controlScript.validateRegularExpNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtCertificateOfOriginInOriginals,exit,JavaScript,6,controlScript.plusNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtCertificateOfOriginCopies,change,JavaScript,3,controlScript.changeUpper controlScript.lengthLimit controlScript.validateRegularExpNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtCertificateOfOriginCopies,exit,JavaScript,6,controlScript.plusNumeric
+LC,form1.LC.subfrmLCFoot.subfrmInvoice.txtCertificateOfOriginCountry,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLCFoot.subfrmOtherDoc.chkBeneficiaryCertificate,change,JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmOtherDoc.chkBeneficiaryCertificate,ready ($form),JavaScript,11,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmOtherDoc.txtOtherDoc,change,JavaScript,3,controlScript.changeUpper controlScript.toUpperCase controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLCFoot.subfrmOtherDoc.txtOtherDoc1,change,JavaScript,4,controlScript.changeUpper controlScript.toUpperCase controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLCFoot.subfrmGoodsDescription.txtGoodsDescription,change,JavaScript,3,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLCFoot.subfrmAdditionalCond.txtAdditionalCond,change,JavaScript,3,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmBankCharges.chkBankCharges,change,JavaScript,13,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmBankCharges.chkBankCharges,ready ($form),JavaScript,13,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmBankCharges.radChargeAccount,change,JavaScript,4,controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmConfirmation.chkConfirmation,change,JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmConfirmation.radioButtonList,change,JavaScript,4,controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.chkTrustReceipts,change,JavaScript,10,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.chkTrustReceipts,ready ($form),JavaScript,10,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.radTrustReceipts.chkSGD,change,JavaScript,34,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.radTrustReceipts.chkSGD,ready ($form),JavaScript,29,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.radTrustReceipts.chkForgeign,change,JavaScript,7,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.radTrustReceipts.chkForgeign,ready ($form),JavaScript,7,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.radTrustReceipts.chkApplyForward,change,JavaScript,11,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.radTrustReceipts.chkApplyForward,ready ($form),JavaScript,11,controlScript.accessChange controlScript.mandatoryChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.txtForgeign,change,JavaScript,3,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.txtForgeign,initialize,JavaScript,4,controlScript.accessChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.txtApplyForward,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.txtApplyForward,initialize,JavaScript,4,controlScript.accessChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.#subform[0].txtApplyForward,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmLCFoot.subfrmDetails.subfrmOne.subfrmIssuanceCharges.txtWithyou,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC,form1.LC.subfrmOthers.btnPrint,click,JavaScript,41,barcodeScript.LCbarcode controlScript.checkSum controlScript.dateFormatChangeMainPage controlScript.normalColor controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+LC,form1.LC.subfrmOthers.btnSave,click,JavaScript,2,barcodeScript.cleanUpLC
+LC,form1.LC.subfrmOthers.PaperFormsBarcode2,calculate,JavaScript,27,
+LC,form1.LC.subfrmOthers.PaperFormsBarcode1,calculate,JavaScript,27,
+LC,form1.LC.subfrmOthers.PaperFormsBarcode4,calculate,JavaScript,27,
+LC,form1.LC.subfrmOthers.PaperFormsBarcode3,calculate,JavaScript,27,
+LC,form1.LC,ready ($form),JavaScript,15,
+LC,form1.LC,ready ($layout),JavaScript,5,controlScript.accessChange controlScript.accessChanger
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmBankAddress.txtDate,exit,JavaScript,9,controlScript.currentDate controlScript.dateFormatChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmNumber.txtNo,exit,JavaScript,26,
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmNumber.txtNo,change,JavaScript,1,controlScript.changeUpper
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmNumber.txtAmendNo,change,JavaScript,2,controlScript.changeUpper controlScript.lengthLimit
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmApplicant.txtName,full,JavaScript,1,
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmApplicant.txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmApplicant.txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmApplicant.txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmApplicant.txtAddress3,change,JavaScript,3,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmApplicant.txtContractName,change,JavaScript,3,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmApplicant.txtTel,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmApplicant.txtFax,change,JavaScript,3,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmBeneficiary.txtName,full,JavaScript,1,
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmBeneficiary.txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmBeneficiary.txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmBeneficiary.txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmBeneficiary.txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmModeOfAdvising.RadioButtonList,change,JavaScript,16,controlScript.accessChange controlScript.mandatoryChange controlScript.radioMandatoryCheck
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmCreditAmount.txtAmount1,exit,JavaScript,4,
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmCreditAmount.drpCurrency2,initialize,JavaScript,1,controlScript.populateDropDownlist
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmCreditAmount.drpCurrency2,change,JavaScript,15,
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmCreditAmount.txtAmount2,exit,JavaScript,4,
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmCreditAmount.txtAmount2,change,JavaScript,1,controlScript.changeUpper
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmCreditAmount.chkAmount,change,JavaScript,22,controlScript.accessChange controlScript.mandatoryChange controlScript.populateDropDownlist controlScript.radioMandatoryCheck
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmCreditAmount.chkAmount,ready ($form),JavaScript,19,controlScript.accessChange controlScript.mandatoryChange controlScript.populateDropDownlist
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmCreditAmount.radAmount,change,JavaScript,22,controlScript.mandatoryChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmCreditAmount.drpCurrency1,initialize,JavaScript,1,controlScript.populateDropDownlist
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmCreditAmount.drpCurrency1,change,JavaScript,14,
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmDateOfExpiry.txtDate,exit,JavaScript,8,controlScript.dateCompare controlScript.dateFormatChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmDateOfExpiry.txtDate,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmDateOfExpiry.chkExpiryDate,change,JavaScript,9,controlScript.accessChange controlScript.mandatoryChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmDateOfExpiry.chkExpiryDate,ready ($form),JavaScript,9,controlScript.accessChange controlScript.mandatoryChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmShipmentDate.txtDate,exit,JavaScript,8,controlScript.dateCompare controlScript.dateFormatChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmShipmentDate.txtDate,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmShipmentDate.chkShipmentDate,change,JavaScript,9,controlScript.accessChange controlScript.mandatoryChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmShipmentDate.chkShipmentDate,ready ($form),JavaScript,9,controlScript.accessChange controlScript.mandatoryChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmPartialshipment.radPartialShipment,change,JavaScript,7,controlScript.mandatoryChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmPartialshipment.radTranshipment,change,JavaScript,7,controlScript.mandatoryChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmPartialshipment.chkPartialShipment,change,JavaScript,16,controlScript.accessChange controlScript.mandatoryChange controlScript.radioMandatoryCheck
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmPartialshipment.chkTranshipment,change,JavaScript,17,controlScript.accessChange controlScript.mandatoryChange controlScript.radioMandatoryCheck
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmPartialshipment.chkPeriod,change,JavaScript,9,controlScript.accessChange controlScript.mandatoryChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmPartialshipment.chkPeriod,ready ($form),JavaScript,9,controlScript.accessChange controlScript.mandatoryChange
+LC_Amendment,form1.LC_Amendment.subfrmDetail.subfrmPartialshipment.txtAmendNo,change,JavaScript,2,controlScript.changeUpper controlScript.lengthLimit
+LC_Amendment,form1.LC_Amendment.subfrmFoot.subfrmOtherAttachement.txtGoodsDescription,change,JavaScript,3,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmFoot.subfrmAccount.radAmendmentCharges,change,JavaScript,11,controlScript.accessChange controlScript.mandatoryChange
+LC_Amendment,form1.LC_Amendment.subfrmFoot.subfrmAccount.txtAccNo,change,JavaScript,3,controlScript.changeUpper controlScript.validateRegularExpChange
+LC_Amendment,form1.LC_Amendment.subfrmFoot.subfrmAccount.txtFaxNo,change,JavaScript,1,controlScript.toUpperCase
+LC_Amendment,form1.LC_Amendment.subfrmFoot.subfrmAccount.subfrmDebitMargin.txtAccNo,change,JavaScript,1,controlScript.toUpperCase
+LC_Amendment,form1.LC_Amendment.subfrmFoot.subfrmAccount.subfrmDebitMargin.txtAmount,exit,JavaScript,4,
+LC_Amendment,form1.LC_Amendment.subfrmFoot.subfrmAccount.subfrmDebitMargin.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+LC_Amendment,form1.LC_Amendment.subfrmFoot.subfrmAccount.subfrmDebitMargin.drpCurrency,change,JavaScript,14,
+LC_Amendment,form1.LC_Amendment.subfrmFoot.subfrmOthers.btnPrint,click,JavaScript,56,barcodeScript.LCAmdtbarcode controlScript.checkSum controlScript.dateFormatChangeMainPage controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty fieldsCheck.checkLCMandatory
+LC_Amendment,form1.LC_Amendment.subfrmFoot.subfrmOthers.btnSave,click,JavaScript,2,barcodeScript.cleanUpLCA
+LC_Amendment,form1.LC_Amendment.subfrmFoot.subfrmOthers.PaperFormsBarcodeLCA,calculate,JavaScript,27,
+LC_Amendment,form1.LC_Amendment.subfrmFoot.subfrmOthers.PaperFormsBarcodeLCA3_1,calculate,JavaScript,27,
+LC_Amendment,form1.LC_Amendment,ready ($form),JavaScript,32,controlScript.accessChange controlScript.mandatoryChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmLeft.subfrmBeneficiary.txtBeneficiaryName,full,JavaScript,1,
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmLeft.subfrmBeneficiary.txtBeneficiaryName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmLeft.subfrmBeneficiary.txtBeneficiaryAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmLeft.subfrmBeneficiary.txtbeneficiaryAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmLeft.subfrmBeneficiary.txtbeneficiaryAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmLeft.subfrmBeneficiary.txtCreditNo,change,JavaScript,2,controlScript.changeUpper controlScript.specialCharacterCheck
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmRight.subfrmIssueBank.txtIssuingBankName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmRight.subfrmIssueBank.txtIssuingBankName1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmRight.subfrmCreditAmount.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmRight.subfrmCreditAmount.drpCurrency,change,JavaScript,16,
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmRight.subfrmCreditAmount.drpCurrency,exit,JavaScript,13,controlScript.accessChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmRight.subfrmCreditAmount.txtAmount,exit,JavaScript,4,
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmRight.subfrmCreditAmount.txtAmount,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmRight.txtDated,exit,JavaScript,1,controlScript.dateFormatChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmRight.txtDated,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmContactPerson.txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmContactPerson.txtTelNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmContactPerson.txtFaxNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmReject.chkReject,change,JavaScript,10,controlScript.accessChange controlScript.mandatoryChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmReject.txtReject,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmBankUse.txtDraftInvNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmVerssel.txtVesselName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmVerssel.txtIMONo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmTenor.radTenor,change,JavaScript,21,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmTenor.radTenor,ready ($form),JavaScript,19,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmTenor.txtTerm,change,JavaScript,2,controlScript.changeUpper controlScript.lengthLimit
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmTenor.txtTerm,exit,JavaScript,7,controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmTenor.txtDaysAfter,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmTenor.txtTenorDate,exit,JavaScript,16,controlScript.accessChangeBE controlScript.dateFormatChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmTenor.txtTenorDate,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmTenor.txtPortDisch,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmTenor.txtPortLoad,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmTenor.txtGoodsDesc,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmTenor.txtDepDated,exit,JavaScript,1,controlScript.dateFormatChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmTenor.txtDepDated,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmTenor.txtCRNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowHeader.txtDrafts,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowHeader.txtInvoice,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowHeader.txtPackingList,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowHeader.txtWeightNote,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowHeader.txtCertofOrigin,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowHeader.txtInsPolicy,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowHeader.txtBL,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowHeader.txtAirwayBills,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowHeader.txtBenCert,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowHeader.txtInput1,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowHeader.txtInput2,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowHeader.txtInput3,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowHeader.txtInput4,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowHeader.txtInput5,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtDrafts,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtDrafts,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtInvoice,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtInvoice,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtPackingList,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtWeightNote,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtCertofOrigin,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtInspolicy,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtInspolicy,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtBL,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtAirwayBills,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtAirwayBills,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtBenCert,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtBenCert,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtInput1,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtInput1,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtInput2,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtInput2,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtInput3,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtInput3,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtInput4,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtInput4,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtInput5,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowOriginal.txtInput5,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtDrafts,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtDrafts,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtInvoice,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtInvoice,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtPackingList,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtWeightNote,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtCertofOrigin,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtInsPolicy,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtInsPolicy,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtBL,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtBL,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtAirwayBills,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtAirwayBills,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtBenCert,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtBenCert,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtInput1,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtInput1,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtInput2,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtInput2,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtInput3,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtInput3,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtInput4,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtInput4,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtInput5,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].Table1.rowCopies.txtInput5,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].drpBank,change,JavaScript,11,controlScript.accessChange controlScript.changeUpper controlScript.mandatoryChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].txtBank,change,JavaScript,3,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmfinancing.subfrmFinancing.radFinancing.DoNotNeed,click,JavaScript,7,
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmfinancing.subfrmFinancing.radFinancing.Request,click,JavaScript,7,
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmfinancing.subfrmFinancing.radFinancing,change,JavaScript,27,controlScript.accessChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmfinancing.subfrmFinancing.txtRate,exit,JavaScript,4,
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmfinancing.subfrmFinancing.txtRate,change,JavaScript,1,controlScript.changeUpper
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmfinancing.subfrmFinancing.subfrmFinanceDetails.subfrmOptions.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmfinancing.subfrmFinancing.subfrmFinanceDetails.subfrmOptions.drpCurrency,change,JavaScript,15,
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmfinancing.subfrmFinancing.subfrmFinanceDetails.subfrmOptions.drpCurrency,exit,JavaScript,13,controlScript.accessChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmfinancing.subfrmFinancing.subfrmFinanceDetails2.subfrmOptions.radRequest1,change,JavaScript,24,controlScript.accessChange controlScript.mandatoryChange
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmfinancing.subfrmFinancing.subfrmFinanceDetails2.subfrmOptions.txtRate,change,JavaScript,1,controlScript.ForceNumberAndDecimalOnly
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmfinancing.subfrmFinancing.subfrmFinanceDetails2.subfrmOptions.txtRate,exit,JavaScript,16,
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmfinancing.subfrmFinancing.btnShow,click,JavaScript,5,
+EBLC,form1.EBLC.subfrmEBLC.#subform[0].subfrmfinancing.subfrmFinancing.btnHide,click,JavaScript,5,
+EBLC,form1.EBLC,ready ($form),JavaScript,20,
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOtherInstructions.radProceedOptions,change,JavaScript,8,controlScript.accessChange
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOtherInstructions.chkCreditFund,change,JavaScript,9,controlScript.accessChange controlScript.mandatoryChange
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOtherInstructions.chkCreditFund,ready ($form),JavaScript,8,controlScript.accessChange
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOtherInstructions.txtCreditFund,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOtherInstructions.chkRemitTheFunds,change,JavaScript,10,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOtherInstructions.chkRemitTheFunds,ready ($form),JavaScript,10,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOtherInstructions.txtRemitTheFunds,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOtherInstructions.chkUseTheFunds,change,JavaScript,12,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOtherInstructions.chkUseTheFunds,ready ($form),JavaScript,12,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOtherInstructions.txtUseTheFunds,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOtherInstructions.chkUseFX,change,JavaScript,11,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOtherInstructions.chkUseFX,ready ($form),JavaScript,10,controlScript.accessChange controlScript.accessChanger
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOtherInstructions.txtUseFX,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOtherInstructions.txtOthers1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOthers.btnPrint,click,JavaScript,60,barcodeScript.EBLCbarcode controlScript.checkSum controlScript.dateFormatChangeMainPage controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty fieldsCheck.checkBEMandatory
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOthers.btnSave,click,JavaScript,2,barcodeScript.cleanUpEBLC
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOthers.PaperFormsBarcode1,calculate,JavaScript,27,
+EBLC,form1.EBLC.subfrmEBLC2.subfrmOthers.PaperFormsBarcode2,calculate,JavaScript,27,
+EBLC,form1.EBLC,initialize,JavaScript,2,
+OBC,form1.OBC.subfrmOBC.subfrmDrawer.subfrmNameAndAddress.txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmDrawer.subfrmNameAndAddress.txtName,full,JavaScript,1,
+OBC,form1.OBC.subfrmOBC.subfrmDrawer.subfrmNameAndAddress.txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmDrawer.subfrmNameAndAddress.txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmDrawer.subfrmNameAndAddress.txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmDrawer.txtContactPerson,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmDrawer.txtTel,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmCurrencyAmount.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+OBC,form1.OBC.subfrmOBC.subfrmCurrencyAmount.drpCurrency,change,JavaScript,13,
+OBC,form1.OBC.subfrmOBC.subfrmCurrencyAmount.txtAmount,exit,JavaScript,4,
+OBC,form1.OBC.subfrmOBC.subfrmCurrencyAmount.txtAmount,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.subfrmDraweeBank.txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmDraweeBank.txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmDraweeBank.txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmDraweeBank.txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmDrawee.txtDrawee,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmDeliverDocumentAgainst.chkPayment,change,JavaScript,3,controlScript.checkBoxMandatoryChange
+OBC,form1.OBC.subfrmOBC.subfrmDeliverDocumentAgainst.chkPayment,ready ($form),JavaScript,1,
+OBC,form1.OBC.subfrmOBC.subfrmDeliverDocumentAgainst.chkAcceptance,change,JavaScript,3,controlScript.checkBoxMandatoryChange
+OBC,form1.OBC.subfrmOBC.subfrmDeliverDocumentAgainst.chkAcceptance,ready ($form),JavaScript,1,
+OBC,form1.OBC.subfrmOBC.subfrmInvoice.txtInvoice,exit,JavaScript,14,controlScript.accessChangeBE
+OBC,form1.OBC.subfrmOBC.subfrmInvoice.txtInvoice,change,JavaScript,2,controlScript.changeUpper controlScript.specialCharacterCheck
+OBC,form1.OBC.subfrmOBC.subfrmTenor.radTenor,change,JavaScript,26,controlScript.accessChange controlScript.mandatoryChange
+OBC,form1.OBC.subfrmOBC.subfrmTenor.txtTerm,change,JavaScript,2,controlScript.changeUpper controlScript.lengthLimit
+OBC,form1.OBC.subfrmOBC.subfrmTenor.txtTerm,exit,JavaScript,7,controlScript.plusNumeric
+OBC,form1.OBC.subfrmOBC.subfrmTenor.txtDaysAfter,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.subfrmPort.txtVesselNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmPort.txtCRNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmPort.txtGoodsDesc,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmPort.txtDepDated,exit,JavaScript,1,controlScript.dateFormatChange
+OBC,form1.OBC.subfrmOBC.subfrmPort.txtDepDated,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmPort.txtPortDisch,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmPort.txtPortLoad,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.Table.rowDocuments.txtDrafts,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowDocuments.txtInvoice,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowDocuments.txtPackingList,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowDocuments.txtCertofOrigin,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowDocuments.txtInsurancePolicy,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowDocuments.txtBLOriginals,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowDocuments.txtBLNN,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowDocuments.txtWeightNote,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowDocuments.txtAirwayBills,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowDocuments.txtBenCert,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowDocuments.txtInput1,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowDocuments.txtInput2,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowDocuments.txtInput3,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowDocuments.inInput4,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtDrafts,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtDrafts,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtInvoice,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtInvoice,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtPackingList,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtCertofOrigin,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtInsurancePolicy,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtBLOriginals,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtBLOriginals,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtBLNN,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtWeightNote,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtWeightNote,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtAirwayBills,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtAirwayBills,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtBenCert,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtBenCert,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtInput2,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtInput2,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtInput3,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtInput3,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtInput4,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtInput4,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtInput5,exit,JavaScript,2,controlScript.changeUpper controlScript.plusNumeric
+OBC,form1.OBC.subfrmOBC.Table.rowOriginal.txtInput5,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowCopies.txtDrafts,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowCopies.txtInvoice,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowCopies.txtPackingList,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowCopies.txtCertofOrigin,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowCopies.txtInsurancePolicy,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowCopies.txtBLOriginals,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowCopies.txtBLNN,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowCopies.txtWeightNote,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowCopies.txtAirwayBills,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowCopies.txtBenCert,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowCopies.txtInput1,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowCopies.txtInput2,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowCopies.txtInput3,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.Table.rowCopies.txtInput4,change,JavaScript,1,controlScript.changeUpper
+OBC,form1.OBC.subfrmOBC.subfrmInterestDrawee.chkInterestDrawee,change,JavaScript,17,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+OBC,form1.OBC.subfrmOBC.subfrmInterestDrawee.chkInterestDrawee,ready ($form),JavaScript,17,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+OBC,form1.OBC.subfrmOBC.subfrmInterestDrawee.txtAt,exit,JavaScript,3,
+OBC,form1.OBC.subfrmOBC.subfrmInterestDrawee.txtAt,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmInterestDrawee.txtFrom,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmFinance.chkFinance,change,JavaScript,5,controlScript.accessChange controlScript.mandatoryChange
+OBC,form1.OBC.subfrmOBC.subfrmFinance.chkFinance,ready ($form),JavaScript,4,controlScript.accessChange
+OBC,form1.OBC.subfrmOBC.subfrmFinance.txtFor,change,JavaScript,5,controlScript.changeUpper controlScript.lengthLimit
+OBC,form1.OBC.subfrmOBC.subfrmFinance.txtFor,exit,JavaScript,6,
+OBC,form1.OBC.subfrmOBC.subfrmCreditFinancing.chkCreditFinancing,change,JavaScript,5,controlScript.accessChange controlScript.mandatoryChange
+OBC,form1.OBC.subfrmOBC.subfrmCreditFinancing.chkCreditFinancing,ready ($form),JavaScript,4,controlScript.accessChange
+OBC,form1.OBC.subfrmOBC.subfrmCreditFinancing.txtNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmCreditFinancing.txtNo,initialize,JavaScript,4,controlScript.accessChange
+OBC,form1.OBC.subfrmOBC.subfrmFXContract.chkFX,change,JavaScript,7,controlScript.accessChange controlScript.mandatoryChange
+OBC,form1.OBC.subfrmOBC.subfrmFXContract.chkFX,ready ($form),JavaScript,9,controlScript.accessChange
+OBC,form1.OBC.subfrmOBC.subfrmFXContract.txtRef,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.#subform[0].subfrmOtherSpecialInstructions.chkOtherSpecialInstructions,change,JavaScript,11,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+OBC,form1.OBC.subfrmOBC.#subform[0].subfrmOtherSpecialInstructions.chkOtherSpecialInstructions,ready ($form),JavaScript,10,controlScript.accessChange controlScript.accessChanger
+OBC,form1.OBC.subfrmOBC.#subform[0].subfrmOtherSpecialInstructions.txtOtherSpecialInstructions,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+OBC,form1.OBC.subfrmOBC.subfrmOthers.btnPrint,click,JavaScript,60,barcodeScript.OBCbarcode controlScript.checkSum controlScript.dateFormatChangeMainPage controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty fieldsCheck.checkOBCMandatory
+OBC,form1.OBC.subfrmOBC.subfrmOthers.btnSave,click,JavaScript,2,barcodeScript.cleanUpOBC
+OBC,form1.OBC.subfrmOBC.subfrmOthers.PaperFormsBarcodeOBC,calculate,JavaScript,27,
+OBC,form1.OBC.subfrmOBC.subfrmOthers.PaperFormsBarcodeOBC4_1,calculate,JavaScript,27,
+OBC,form1.OBC,ready ($form),JavaScript,14,
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmApplicant.txtName,full,JavaScript,3,
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmApplicant.txtName,change,JavaScript,3,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmApplicant.txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmApplicant.txtAddress2,change,JavaScript,3,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmApplicant.txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmApplicant.txtContractName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmApplicant.txtTel,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmApplicant.txtFax,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmApplicant.txtTel,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmForBankUse.subfrmBRP.radBRP,change,JavaScript,47,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmForBankUse.subfrmBRP.radBRP,ready ($form),JavaScript,17,controlScript.accessChange
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmForBankUse.subfrmBRP.txtICRef,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmForBankUse.subfrmBRP.txtICRef,exit,JavaScript,26,
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmForBankUse.subfrmBRP.txtCredit,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.#subform[0].subfrmForBankUse.subfrmBRP.txtCredit,exit,JavaScript,26,
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrm3PartyBeneficiary.txtName,full,JavaScript,3,
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrm3PartyBeneficiary.txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrm3PartyBeneficiary.txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrm3PartyBeneficiary.txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrm3PartyBeneficiary.txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrmSupDetails.txtName,full,JavaScript,3,
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrmSupDetails.txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrmSupDetails.txtCity,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrmSupDetails.txtCity,initialize,JavaScript,1,controlScript.populateCountryList
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrmSupDetails.txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrmSupDetails.txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrmSupDetails.txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrmBillAmount.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrmBillAmount.drpCurrency,change,JavaScript,22,
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrmBillAmount.drpCurrency,exit,JavaScript,15,
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrmBillAmount.txtAmount,exit,JavaScript,5,
+DBRP,form1.DBRP.subfrmAPF.#subform[1].subfrmBillAmount.txtAmount,change,JavaScript,1,controlScript.ForceNumberAndDecimalOnly
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmFinancing.drpFinanceCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmFinancing.drpFinanceCurrency,change,JavaScript,14,
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmFinancing.txtdays,change,JavaScript,4,controlScript.changeUpper controlScript.forceNumberOnly controlScript.lengthLimit
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmFinancing.txtContractNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmFinancing.txtAmount,exit,JavaScript,7,
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmFinancing.txtAmount,change,JavaScript,1,controlScript.ForceNumberAndDecimalOnly
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmFinancing.txtOBCDate,initialize,JavaScript,6,controlScript.accessChangeBE
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmFinancing.txtOBCDate,exit,JavaScript,15,controlScript.accessChangeBE controlScript.currentDate controlScript.dateFormatChange
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmContract.subFx.txtFXContractSeq,change,JavaScript,1,controlScript.forceNumberOnly
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmContract.subFx.txtFXContractSeq,exit,JavaScript,6,controlScript.empty
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmContract.subFx.txtContractNo,change,JavaScript,1,controlScript.forceNumberOnly
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmContract.subFx.txtContractNo,exit,JavaScript,12,controlScript.empty
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmContract.subFx.txtAmount,exit,JavaScript,6,
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmContract.subFx.txtAmount,change,JavaScript,1,controlScript.ForceNumberAndDecimalOnly
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmContract.#subform[0].add.btnAdd,click,JavaScript,15,
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmContract.#subform[0].add.btnAdd,initialize,JavaScript,1,
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmContract.#subform[0].delete.btnDelete,click,JavaScript,2,
+DBRP,form1.DBRP.subfrmAPF.#subform[2].subfrmContract.#subform[0].delete.btnDelete,initialize,JavaScript,1,
+DBRP,form1.DBRP.subfrmAPF.#subform[2].#subform[0].subPurchase.radDescrip,change,JavaScript,16,controlScript.accessChange controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.#subform[2].#subform[0].subPurchase.radDescrip,ready ($form),JavaScript,16,controlScript.accessChange controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.#subform[2].#subform[0].subPurchase.txtServices,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[2].#subform[0].subPurchase.txtGoods,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[2].#subform[0].subfrmDescription.txtDescription1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[2].#subform[0].subfrmDescription.txtDescription2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[2].#subform[0].subfrmDescription.txtDescription3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[2].#subform[0].subfrmDescription.txtDescription4,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.#subform[2].#subform[0].subfrmDescription.txtDescription5,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.Table.rowDocuments.txtInvoice,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowDocuments.txtPO,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowDocuments.txtPInvoice,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowDocuments.txtLanding,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowDocuments.txtAirBill,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowDocuments.txtDelivery,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowDocuments.txtInput2,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowDocuments.txtInput3,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowDocuments.inInput4,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowCopies.txtInput1,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowCopies.txtInput2,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowCopies.txtInput3,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowCopies.txtInput4,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowCopies.txtInput5,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowCopies.txtInput6,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowCopies.txtInput7,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowCopies.txtInput8,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.Table.rowCopies.txtInput9,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.radRemit,change,JavaScript,132,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.radRemit,ready ($form),JavaScript,120,controlScript.accessChange controlScript.accessChanger controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.radInstructions,change,JavaScript,30,controlScript.accessChange controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].radSupYN,change,JavaScript,14,
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtName,full,JavaScript,1,
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtName2,full,JavaScript,1,
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtName2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtAddress1,full,JavaScript,1,
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtAddress2,full,JavaScript,1,
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtAddress3,initialize,JavaScript,1,controlScript.populateCountryList
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtPostal,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtPostal,full,JavaScript,1,
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtTown,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtTown,full,JavaScript,1,
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtAccNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmSupplier.#subform[0].txtRefNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmBanker.#subform[0].txtName,full,JavaScript,1,
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmBanker.#subform[0].txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmBanker.#subform[0].txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmBanker.#subform[0].txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmBanker.#subform[0].txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmBanker.#subform[0].txtSwiftCode,change,JavaScript,2,controlScript.changeUpper controlScript.forceAlphaNumericOnly
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmBanker.#subform[0].txtSwiftCode,exit,JavaScript,5,
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmBanker.#subform[1].txtCName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmBanker.#subform[1].txtCorAddress,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmBanker.#subform[1].txtCorSwiftCode,change,JavaScript,2,controlScript.changeUpper controlScript.forceAlphaNumericOnly
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.subfrmBanker.#subform[1].txtCorSwiftCode,exit,JavaScript,5,
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.txtCreditAcc,change,JavaScript,3,controlScript.changeUpper controlScript.forceNumberOnly controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.txtCreditAcc,exit,JavaScript,9,
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.txtOthers1,change,JavaScript,3,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.txtOthers2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.txtOthers3,change,JavaScript,1,controlScript.changeUpper
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.txtDebitAcc,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.txtAccNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.chkOthers,change,JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmInstructions.chkOthers,ready ($form),JavaScript,13,controlScript.accessChange controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmSupp.#subform[0].chkSup,change,JavaScript,14,controlScript.accessChange controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmSupp.#subform[0].chkSup,ready ($form),JavaScript,14,controlScript.accessChange controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmSupp.#subform[0].txtRefNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmSupp.#subform[0].txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmSupp.#subform[0].txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmSupp.#subform[0].txtName,full,JavaScript,1,
+DBRP,form1.DBRP.subfrmAPF.subfrmSupp.#subform[0].txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmSupp.#subform[1].txtAmount,exit,JavaScript,4,
+DBRP,form1.DBRP.subfrmAPF.subfrmSupp.#subform[1].txtBankSwift,change,JavaScript,2,controlScript.changeUpper controlScript.forceAlphaNumericOnly
+DBRP,form1.DBRP.subfrmAPF.subfrmSupp.#subform[1].txtBankSwift,exit,JavaScript,5,
+DBRP,form1.DBRP.subfrmAPF.subfrmSupp.#subform[1].txtSwiftCode,change,JavaScript,2,controlScript.changeUpper controlScript.forceAlphaNumericOnly
+DBRP,form1.DBRP.subfrmAPF.subfrmSupp.#subform[1].txtSwiftCode,exit,JavaScript,5,
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.radDebit,change,JavaScript,31,controlScript.accessChange controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.drpA_Currency,initialize,JavaScript,1,controlScript.populateDropDownlist
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.drpA_Currency,exit,JavaScript,10,controlScript.changeNormalColor controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.drpA_Currency,change,JavaScript,1,
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.txtA_Account,exit,JavaScript,21,controlScript.changeNormalColor controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.txtA_Account,change,JavaScript,6,controlScript.forceNumberOnly controlScript.lengthLimit
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.drpF_Currency,initialize,JavaScript,1,controlScript.populateDropDownlist
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.drpF_Currency,exit,JavaScript,10,controlScript.changeNormalColor controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.drpF_Currency,change,JavaScript,1,
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.txtF_Account,exit,JavaScript,20,controlScript.changeNormalColor controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.txtF_Account,change,JavaScript,5,controlScript.forceNumberOnly controlScript.lengthLimit
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.txtL_Account,exit,JavaScript,19,controlScript.changeNormalColor controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.txtL_Account,change,JavaScript,2,controlScript.forceNumberOnly controlScript.lengthLimit
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.drpRe_Currency,initialize,JavaScript,1,controlScript.populateDropDownlist
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.drpRe_Currency,exit,JavaScript,10,controlScript.changeNormalColor controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.drpRe_Currency,change,JavaScript,1,
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.txtRe_Account,exit,JavaScript,20,controlScript.changeNormalColor controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.txtRe_Account,change,JavaScript,5,controlScript.forceNumberOnly controlScript.lengthLimit
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[0].txtFXContractNo,change,JavaScript,1,controlScript.forceNumberOnly
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[0].txtFXContractNo,exit,JavaScript,12,controlScript.empty
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[0].txtFXContractSeq,change,JavaScript,1,controlScript.forceNumberOnly
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[0].txtFXContractSeq,exit,JavaScript,6,controlScript.empty
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[1].drpCurrency1,initialize,JavaScript,1,controlScript.populateDropDownlist
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[1].drpCurrency1,change,JavaScript,12,
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[1].drpCurrency1,exit,JavaScript,48,controlScript.changeNormalColor controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[1].txtAccount,exit,JavaScript,58,controlScript.changeNormalColor controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[1].txtAccount,change,JavaScript,1,controlScript.forceNumberOnly
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[2].drpCurrency2,initialize,JavaScript,1,controlScript.populateDropDownlist
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[2].drpCurrency2,exit,JavaScript,41,controlScript.changeNormalColor controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[2].txtDebitAccNo,exit,JavaScript,49,controlScript.changeNormalColor controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[2].txtDebitAccNo,change,JavaScript,1,controlScript.forceNumberOnly
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[3].drpCurrency3,initialize,JavaScript,1,controlScript.populateDropDownlist
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[3].txtInterestAccNo,exit,JavaScript,23,
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.subDetails.details.#subform[3].txtInterestAccNo,change,JavaScript,1,controlScript.forceNumberOnly
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.txtDebitAcc,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.txtDebitAcc,exit,JavaScript,5,
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.drpDebitCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+DBRP,form1.DBRP.subfrmAPF.subfrmDebitComm.drpDebitCurrency,exit,JavaScript,15,
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[0].txtFXContractNo,change,JavaScript,1,controlScript.forceNumberOnly
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[0].txtFXContractNo,exit,JavaScript,12,controlScript.empty
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[0].txtFXContractSeq,change,JavaScript,1,controlScript.forceNumberOnly
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[0].txtFXContractSeq,exit,JavaScript,6,controlScript.empty
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[1].drpCurrency1,initialize,JavaScript,1,controlScript.populateDropDownlist
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[1].drpCurrency1,change,JavaScript,12,
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[1].txtAmount,exit,JavaScript,4,
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[2].drpCurrency2,initialize,JavaScript,1,controlScript.populateDropDownlist
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[2].drpCurrency2,exit,JavaScript,26,controlScript.changeNormalColor controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[2].txtDebitAccNo,exit,JavaScript,22,controlScript.empty controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[2].txtDebitAccNo,change,JavaScript,1,controlScript.forceNumberOnly
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[3].drpCurrency3,initialize,JavaScript,1,controlScript.populateDropDownlist
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[3].drpCurrency3,exit,JavaScript,26,controlScript.changeNormalColor controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[3].txtInterestAccNo,exit,JavaScript,22,controlScript.empty controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[3].txtInterestAccNo,change,JavaScript,1,controlScript.forceNumberOnly
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[4].drpCurrency4,initialize,JavaScript,1,controlScript.populateDropDownlist
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[4].drpCurrency4,exit,JavaScript,26,controlScript.changeNormalColor controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[4].txtInterestAccNo2,exit,JavaScript,22,controlScript.empty controlScript.mandatoryChange
+DBRP,form1.DBRP.subfrmAPF.subfrmMsgForSupplier.subDetails.details.#subform[4].txtInterestAccNo2,change,JavaScript,1,controlScript.forceNumberOnly
+DBRP,form1.DBRP.subfrmAPFFoot.subfrmOthers.btnPrint,click,JavaScript,18,barcodeScript.DBRPbarcode controlScript.checkSum controlScript.dateFormatChangeMainPage controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+DBRP,form1.DBRP.subfrmAPFFoot.subfrmOthers.btnSave,click,JavaScript,3,barcodeScript.cleanUpDBRP
+DBRP,form1.DBRP.subfrmAPFFoot.subfrmOthers.PaperFormsBarcode1,calculate,JavaScript,27,
+DBRP,form1.DBRP.subfrmAPFFoot.subfrmOthers.PaperFormsBarcode1,calculate,JavaScript,27,
+BEOBC,form1.BEOBC.subfrmFirst.txtNo,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtNo,change,JavaScript,2,controlScript.changeUpper controlScript.specialCharacterCheck
+BEOBC,form1.BEOBC.subfrmFirst.txtDate,ready ($form),JavaScript,2,controlScript.currentDate controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtDate,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtDate,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmFirst.txtExchange,exit,JavaScript,34,controlScript.exchangeMap currencyConvertor.cutString currencyConvertor.massageString currencyConvertor.toWords
+BEOBC,form1.BEOBC.subfrmFirst.txtExchange,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmFirst.txtAt,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtAt,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmFirst.txtSum1,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtSum1,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmFirst.Dummy1,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtSum2,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtSum2,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmFirst.txtSum3,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtSum3,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmFirst.Dummy2,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtValue1,full,JavaScript,3,
+BEOBC,form1.BEOBC.subfrmFirst.txtValue1,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtValue1,change,JavaScript,2,controlScript.changeUpper controlScript.checkMaxLength_BE
+BEOBC,form1.BEOBC.subfrmFirst.txtValue2,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtValue2,change,JavaScript,5,controlScript.changeUpper controlScript.checkMaxLength_BE
+BEOBC,form1.BEOBC.subfrmFirst.txtValue3,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtValue3,change,JavaScript,5,controlScript.changeUpper controlScript.checkMaxLength_BE
+BEOBC,form1.BEOBC.subfrmFirst.txtTo1,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtTo1,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmFirst.txtTo2,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtTo2,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmFirst.txtTo3,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtTo3,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmFirst.txtTo4,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtTo4,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmFirst.txtSignature,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmFirst.txtSignature,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmFirst.txtFor1,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.txtFor2,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmFirst.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+BEOBC,form1.BEOBC.subfrmFirst.drpCurrency,exit,JavaScript,42,controlScript.exchangeMap currencyConvertor.cutString currencyConvertor.massageString currencyConvertor.toWords
+BEOBC,form1.BEOBC.subfrmFirst.drpCurrency,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtNo,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtDate,exit,JavaScript,1,controlScript.currentDate
+BEOBC,form1.BEOBC.subfrmSecond.txtDate,ready ($form),JavaScript,1,controlScript.currentDate
+BEOBC,form1.BEOBC.subfrmSecond.txtDate,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtExchange,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtAt,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtSum1,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtSum2,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtSum3,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtValue1,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtValue2,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtValue3,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtTo1,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtTo1,exit,JavaScript,1,controlScript.exchangeMap
+BEOBC,form1.BEOBC.subfrmSecond.txtTo2,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtTo3,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtTo4,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtSignature1,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.txtSignature2,change,JavaScript,1,controlScript.changeUpper
+BEOBC,form1.BEOBC.subfrmSecond.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+BEOBC,form1.BEOBC.subfrmSecond.drpCurrency,exit,JavaScript,12,
+BEOBC,form1.BEOBC,ready ($form),JavaScript,30,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtNo,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtNo,change,JavaScript,2,controlScript.changeUpper controlScript.specialCharacterCheck
+BEEBLC,form1.BEEBLC.subfrmFirst.txtDate,exit,JavaScript,3,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtDate,ready ($form),JavaScript,2,controlScript.currentDate controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtDate,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmFirst.txtExchange,exit,JavaScript,31,controlScript.exchangeMap currencyConvertor.cutString currencyConvertor.massageString currencyConvertor.toWords
+BEEBLC,form1.BEEBLC.subfrmFirst.txtExchange,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmFirst.txtAt,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtAt,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmFirst.txtSum1,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtSum1,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmFirst.Dummy1,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtSum2,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtSum2,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmFirst.txtSum3,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtSum3,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmFirst.Dummy2,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtTo1,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtTo1,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmFirst.txtTo2,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtTo2,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmFirst.txtTo3,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtTo3,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmFirst.txtSignature1,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmFirst.txtDocumentary,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtDocumentary,change,JavaScript,2,controlScript.changeUpper controlScript.specialCharacterCheck
+BEEBLC,form1.BEEBLC.subfrmFirst.txtSignature2,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmFirst.txtTo4,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtTo4,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmFirst.txtFor1,exit,JavaScript,4,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.Dummy3,exit,JavaScript,29,controlScript.accessChange controlScript.exchangeMap currencyConvertor.cutString currencyConvertor.massageString
+BEEBLC,form1.BEEBLC.subfrmFirst.Dummy3,change,JavaScript,1,controlScript.checkMaxLength_BE
+BEEBLC,form1.BEEBLC.subfrmFirst.txtValue2,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtValue2,change,JavaScript,5,controlScript.changeUpper controlScript.checkMaxLength_BE
+BEEBLC,form1.BEEBLC.subfrmFirst.txtValue3,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtValue3,change,JavaScript,5,controlScript.changeUpper controlScript.checkMaxLength_BE
+BEEBLC,form1.BEEBLC.subfrmFirst.Dummy4,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.Dummy4,change,JavaScript,4,controlScript.checkMaxLength_BE
+BEEBLC,form1.BEEBLC.subfrmFirst.txtDated,exit,JavaScript,2,controlScript.dateFormatChange controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtDated,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmFirst.txtFor2,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+BEEBLC,form1.BEEBLC.subfrmFirst.drpCurrency,exit,JavaScript,42,controlScript.exchangeMap currencyConvertor.cutString currencyConvertor.massageString currencyConvertor.toWords
+BEEBLC,form1.BEEBLC.subfrmFirst.txtValue1,exit,JavaScript,1,controlScript.exchangeMap
+BEEBLC,form1.BEEBLC.subfrmFirst.txtValue1,change,JavaScript,2,controlScript.changeUpper controlScript.checkMaxLength_BE
+BEEBLC,form1.BEEBLC.subfrmSecond.txtNo,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtDate,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtExchange,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtAt,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtSum1,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtSum2,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtSum3,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtTo1,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtTo2,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtTo3,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtSignature1,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtSignature2,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtValue1,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtValue2,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtValue3,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtDated,exit,JavaScript,1,controlScript.dateFormatChange
+BEEBLC,form1.BEEBLC.subfrmSecond.txtDated,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtDocumentary,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.txtTo4,change,JavaScript,1,controlScript.changeUpper
+BEEBLC,form1.BEEBLC.subfrmSecond.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+BEEBLC,form1.BEEBLC.subfrmSecond.drpCurrency,exit,JavaScript,12,
+BEEBLC,form1.BEEBLC,ready ($form),JavaScript,33,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtNo,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtNo,change,JavaScript,2,controlScript.changeUpper controlScript.specialCharacterCheck
+BEGeneric,form1.BEGeneric.subfrmFirst.txtDate,exit,JavaScript,2,controlScript.dateFormatChange controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtDate,ready ($form),JavaScript,5,controlScript.currentDate controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtDate,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtExchange,exit,JavaScript,31,controlScript.exchangeMap currencyConvertor.cutString currencyConvertor.massageString currencyConvertor.toWords
+BEGeneric,form1.BEGeneric.subfrmFirst.txtExchange,ready ($form),JavaScript,22,
+BEGeneric,form1.BEGeneric.subfrmFirst.txtExchange,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtAt,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtAt,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtSum1,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtSum1,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtSum2,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtSum2,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtSum3,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtSum3,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtValue1,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtValue1,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtValue2,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtValue2,change,JavaScript,3,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtValue3,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtValue3,change,JavaScript,3,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtDocumentary,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtDocumentary,change,JavaScript,2,controlScript.changeUpper controlScript.specialCharacterCheck
+BEGeneric,form1.BEGeneric.subfrmFirst.txtTo1,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtTo1,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtTo2,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtTo2,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtTo3,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtTo3,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtSignature1,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtSignature2,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtDated,exit,JavaScript,2,controlScript.dateFormatChange controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtDated,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtTo4,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtTo4,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtFor1,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtFor1,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.txtFor2,exit,JavaScript,1,controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmFirst.txtFor2,change,JavaScript,1,controlScript.changeUpper
+BEGeneric,form1.BEGeneric.subfrmFirst.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+BEGeneric,form1.BEGeneric.subfrmFirst.drpCurrency,change,JavaScript,13,
+BEGeneric,form1.BEGeneric.subfrmFirst.drpCurrency,exit,JavaScript,26,controlScript.exchangeMap currencyConvertor.cutString currencyConvertor.massageString currencyConvertor.toWords
+BEGeneric,form1.BEGeneric.subfrmSecond.txtDate,ready ($form),JavaScript,4,controlScript.currentDate controlScript.exchangeMap
+BEGeneric,form1.BEGeneric.subfrmSecond.txtDated,exit,JavaScript,1,controlScript.dateFormatChange
+BEGeneric,form1.BEGeneric.subfrmSecond.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+BEGeneric,form1.BEGeneric.subfrmSecond.drpCurrency,change,JavaScript,13,
+BEGeneric,form1.BEGeneric,ready ($form),JavaScript,17,controlScript.exchangeMap
+SBLC,form1.SBLC.SBLCBcode.txtSBLCDate,exit,JavaScript,6,controlScript.currentDate controlScript.dateFormatChange
+SBLC,form1.SBLC.SBLCBcode.txtSBLCDate,initialize,JavaScript,3,controlScript.currentDate
+SBLC,form1.SBLC.SBLCBcode.txtSBLCDate,ready ($form),JavaScript,1,controlScript.currentDate
+SBLC,form1.SBLC.totalPageNo.txtPageNo,change,JavaScript,1,controlScript.forceNumberOnly
+SBLC,form1.SBLC.applicantAndBeneficiary.subApplicantInfo.txtBankCIFNo,change,JavaScript,1,controlScript.forceNumberOnly
+SBLC,form1.SBLC.applicantAndBeneficiary.subApplicantInfo.txtBankCIFNo,exit,JavaScript,6,
+SBLC,form1.SBLC.applicantAndBeneficiary.subApplicantInfo.txtApplicantName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.applicantAndBeneficiary.subApplicantInfo.txtApplicantAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.applicantAndBeneficiary.subApplicantInfo.txtApplicantAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.applicantAndBeneficiary.subApplicantInfo.txtApplicantAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.applicantAndBeneficiary.subApplicantInfo.txtContactName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.applicantAndBeneficiary.subApplicantInfo.txtTelNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.applicantAndBeneficiary.subApplicantInfo.txtFaxNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.applicantAndBeneficiary.subBeneficiaryInfo.txtRegistrationNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.applicantAndBeneficiary.subBeneficiaryInfo.txtBeneficiaryName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.applicantAndBeneficiary.subBeneficiaryInfo.txtBeneficiaryAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.applicantAndBeneficiary.subBeneficiaryInfo.txtBeneficiaryAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.applicantAndBeneficiary.subBeneficiaryInfo.drpBeneficiaryCountry,initialize,JavaScript,1,controlScript.populateCountryList
+SBLC,form1.SBLC.applicantAndBeneficiary.subBeneficiaryInfo.txtContactName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.applicantAndBeneficiary.subBeneficiaryInfo.txtTelNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.applicantAndBeneficiary.subBeneficiaryInfo.txtFaxNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.thirdPartyAndAdvisingBank.subThirdParty.txtThirdPartyAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.thirdPartyAndAdvisingBank.subThirdParty.txtThirdPartyAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.thirdPartyAndAdvisingBank.subThirdParty.txtThirdPartyAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.thirdPartyAndAdvisingBank.subThirdParty.txtThirdPartyName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.thirdPartyAndAdvisingBank.subAdvisingBank.txtAdvisingBankName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.thirdPartyAndAdvisingBank.subAdvisingBank.txtAdvisingBankAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.thirdPartyAndAdvisingBank.subAdvisingBank.txtAdvisingBankAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.thirdPartyAndAdvisingBank.subAdvisingBank.txtAdvisingBankAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.thirdPartyAndAdvisingBank.subAdvisingBank.txtSWIFTAddress,change,JavaScript,2,controlScript.changeUpper controlScript.forceAlphaNumericOnly
+SBLC,form1.SBLC.thirdPartyAndAdvisingBank.subAdvisingBank.txtSWIFTAddress,exit,JavaScript,5,
+SBLC,form1.SBLC.amountAndPeriod.subCurrenyAmount.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+SBLC,form1.SBLC.amountAndPeriod.subCurrenyAmount.drpCurrency,change,JavaScript,12,
+SBLC,form1.SBLC.amountAndPeriod.subCurrenyAmount.txtAmount,exit,JavaScript,4,
+SBLC,form1.SBLC.amountAndPeriod.subValidPeriod.txtEffectiveDate,exit,JavaScript,19,controlScript.compareEffectiveDate controlScript.dateCompare controlScript.dateFormatChange controlScript.validateDate
+SBLC,form1.SBLC.amountAndPeriod.subValidPeriod.txtEffectiveDate,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.amountAndPeriod.subValidPeriod.txtExpiryDate,exit,JavaScript,19,controlScript.compareEffectiveDate controlScript.dateCompare controlScript.dateFormatChange controlScript.validateDate
+SBLC,form1.SBLC.amountAndPeriod.subValidPeriod.txtExpiryDate,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.partialAndCharges.subPartialDrawings.#subform[0].radPartial,change,JavaScript,11,
+SBLC,form1.SBLC.partialAndCharges.subPartialDrawings.#subform[0].radPartial,ready ($form),JavaScript,10,
+SBLC,form1.SBLC.partialAndCharges.subCharges.#subform[0].radCharges,change,JavaScript,11,
+SBLC,form1.SBLC.partialAndCharges.subCharges.#subform[0].radCharges,ready ($form),JavaScript,10,
+SBLC,form1.SBLC.sblcFormat.txtSBLCFormat,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.specialInstructions.txtSpecialInstructions,change,JavaScript,1,controlScript.changeUpper
+SBLC,form1.SBLC.thisApplication.#subform[0].radApplication,change,JavaScript,11,
+SBLC,form1.SBLC.thisApplication.#subform[0].radApplication,ready ($form),JavaScript,10,
+SBLC,form1.SBLC.allFees.subSBLCAcNo.txtAccNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.allFees.subHeader.txtAccNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLC,form1.SBLC.printAndBarcode.#subform[0].btnSave,click,JavaScript,2,barcodeScript.SBLCbarcode
+SBLC,form1.SBLC.printAndBarcode.#subform[0].btnPrint,click,JavaScript,64,barcodeScript.SBLCbarcode controlScript.checkSum controlScript.dateFormatChangeMainPage controlScript.mandatoryColor controlScript.normalColor controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+SBLC,form1.SBLC.printAndBarcode.#subform[1].PaperFormsBarcodeSBLC_1,calculate,JavaScript,27,
+SBLC,form1.SBLC.printAndBarcode.#subform[1].PaperFormsBarcodeSBLC_2,calculate,JavaScript,27,
+SBLC,form1.SBLC.printAndBarcode.#subform[1].PaperFormsBarcodeSBLC_3,calculate,JavaScript,27,
+SBLC,form1.SBLC.printAndBarcode.#subform[1].PaperFormsBarcodeSBLC_4,calculate,JavaScript,27,
+SBLC,form1.SBLC.printAndBarcode.#subform[1].PaperFormsBarcodeSBLC_5,calculate,JavaScript,27,
+SBLC,form1.SBLC.printAndBarcode.#subform[1].PaperFormsBarcodeSBLC_6,calculate,JavaScript,27,
+SBLC,form1.SBLC.printAndBarcode.#subform[1].PaperFormsBarcodeSBLC_7,calculate,JavaScript,27,
+SBLC,form1.SBLC.printAndBarcode.#subform[1].PaperFormsBarcodeSBLC_8,calculate,JavaScript,27,
+SBLC,form1.SBLC.printAndBarcode.#subform[1].PaperFormsBarcodeSBLC_9,calculate,JavaScript,27,
+SBLC,form1.SBLC.printAndBarcode.#subform[1].PaperFormsBarcodeSBLC_10,calculate,JavaScript,27,
+SBLCA,form1.SBLCA.SBLCABcode.txtSBLCADate,exit,JavaScript,6,controlScript.currentDate controlScript.dateFormatChange
+SBLCA,form1.SBLCA.SBLCABcode.txtSBLCADate,initialize,JavaScript,1,
+SBLCA,form1.SBLCA.SBLCABcode.txtSBLCADate,ready ($form),JavaScript,1,controlScript.currentDate
+SBLCA,form1.SBLCA.BankAndRefNo.BankNo.txtBankCIFNo,change,JavaScript,1,controlScript.forceNumberOnly
+SBLCA,form1.SBLCA.BankAndRefNo.BankNo.txtBankCIFNo,exit,JavaScript,6,
+SBLCA,form1.SBLCA.BankAndRefNo.refNo.txtRefNo,change,JavaScript,1,controlScript.forceNumberOnly
+SBLCA,form1.SBLCA.BankAndRefNo.refNo.txtRefNo,exit,JavaScript,5,
+SBLCA,form1.SBLCA.applicantAndBeneficiary.subApplicantInfo.txtApplicantName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.applicantAndBeneficiary.subApplicantInfo.txtApplicantAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.applicantAndBeneficiary.subApplicantInfo.txtApplicantAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.applicantAndBeneficiary.subApplicantInfo.txtApplicantAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.applicantAndBeneficiary.subApplicantInfo.txtContactName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.applicantAndBeneficiary.subApplicantInfo.txtTelNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.applicantAndBeneficiary.subApplicantInfo.txtFaxNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.applicantAndBeneficiary.subBeneficiaryInfo.txtBeneficiaryName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.applicantAndBeneficiary.subBeneficiaryInfo.txtBeneficiaryAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.applicantAndBeneficiary.subBeneficiaryInfo.txtBeneficiaryAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.applicantAndBeneficiary.subBeneficiaryInfo.drpBeneficiaryCountry,initialize,JavaScript,1,controlScript.populateCountryList
+SBLCA,form1.SBLCA.amendments.amount.chkAmendAmount,change,JavaScript,27,controlScript.accessChange controlScript.mandatoryChange
+SBLCA,form1.SBLCA.amendments.amount.chkAmendAmount,ready ($form),JavaScript,27,controlScript.accessChange controlScript.mandatoryChange
+SBLCA,form1.SBLCA.amendments.amount.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+SBLCA,form1.SBLCA.amendments.amount.drpCurrency,change,JavaScript,12,
+SBLCA,form1.SBLCA.amendments.amount.txtAmount,exit,JavaScript,4,
+SBLCA,form1.SBLCA.amendments.amount.txtAmount2,exit,JavaScript,4,
+SBLCA,form1.SBLCA.amendments.amount.drpCurrency2,initialize,JavaScript,1,controlScript.populateDropDownlist
+SBLCA,form1.SBLCA.amendments.amount.drpCurrency2,change,JavaScript,12,
+SBLCA,form1.SBLCA.amendments.expiryDate.chkAmendExpiryDate,change,JavaScript,11,controlScript.accessChange controlScript.mandatoryChange
+SBLCA,form1.SBLCA.amendments.expiryDate.chkAmendExpiryDate,ready ($form),JavaScript,11,controlScript.accessChange controlScript.mandatoryChange
+SBLCA,form1.SBLCA.amendments.expiryDate.txtExpiryDate,exit,JavaScript,1,controlScript.dateFormatChange
+SBLCA,form1.SBLCA.amendments.expiryDate.txtExpiryDate,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.amendments.amendText.text.chkAmendText,change,JavaScript,11,controlScript.accessChange controlScript.mandatoryChange
+SBLCA,form1.SBLCA.amendments.amendText.text.chkAmendText,ready ($form),JavaScript,11,controlScript.accessChange controlScript.mandatoryChange
+SBLCA,form1.SBLCA.amendments.amendText.txtAmend,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.deliveryInstructions.#subform[0].radDelivery,change,JavaScript,61,controlScript.accessChange controlScript.mandatoryChange
+SBLCA,form1.SBLCA.deliveryInstructions.#subform[0].radDelivery,ready ($form),JavaScript,61,controlScript.accessChange controlScript.mandatoryChange
+SBLCA,form1.SBLCA.deliveryInstructions.#subform[0].txtContactName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.deliveryInstructions.#subform[0].txtPassportICNo,change,JavaScript,2,controlScript.changeUpper controlScript.forceAlphaNumericOnly
+SBLCA,form1.SBLCA.deliveryInstructions.#subform[0].txtPassportICNo,exit,JavaScript,6,
+SBLCA,form1.SBLCA.deliveryInstructions.#subform[0].txtTelNo,change,JavaScript,1,controlScript.forceNumberOnly
+SBLCA,form1.SBLCA.deliveryInstructions.#subform[0].txtAttn,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.deliveryInstructions.#subform[0].txtFreeText,change,JavaScript,1,controlScript.changeUpper
+SBLCA,form1.SBLCA.we.charges.radCharges,change,JavaScript,11,
+SBLCA,form1.SBLCA.we.charges.radCharges,ready ($form),JavaScript,10,
+SBLCA,form1.SBLCA.we.#subform[0].txtAccNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+SBLCA,form1.SBLCA.printAndBarcode.#subform[0].btnSave,click,JavaScript,2,barcodeScript.SBLCAbarcode
+SBLCA,form1.SBLCA.printAndBarcode.#subform[0].btnPrint,click,JavaScript,24,barcodeScript.SBLCAbarcode controlScript.checkSum controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+SBLCA,form1.SBLCA.printAndBarcode.#subform[1].PaperFormsBarcodeSBLCA_1,calculate,JavaScript,27,
+SBLCA,form1.SBLCA.printAndBarcode.#subform[1].PaperFormsBarcodeSBLCA_2,calculate,JavaScript,27,
+SBLCA,form1.SBLCA.printAndBarcode.#subform[1].PaperFormsBarcodeSBLCA_3,calculate,JavaScript,27,
+SBLCA,form1.SBLCA.printAndBarcode.#subform[1].PaperFormsBarcodeSBLCA_4,calculate,JavaScript,27,
+BGA,form1.BGA.BGABcode.txtSBLCADate,exit,JavaScript,6,controlScript.currentDate controlScript.dateFormatChange
+BGA,form1.BGA.BGABcode.txtSBLCADate,initialize,JavaScript,1,
+BGA,form1.BGA.BGABcode.txtSBLCADate,ready ($form),JavaScript,1,controlScript.currentDate
+BGA,form1.BGA.BankAndRefNo.BankNo.txtBankCIFNo,change,JavaScript,1,controlScript.forceNumberOnly
+BGA,form1.BGA.BankAndRefNo.BankNo.txtBankCIFNo,exit,JavaScript,6,
+BGA,form1.BGA.BankAndRefNo.refNo.txtRefNo,change,JavaScript,1,controlScript.forceNumberOnly
+BGA,form1.BGA.BankAndRefNo.refNo.txtRefNo,exit,JavaScript,5,
+BGA,form1.BGA.applicantAndBeneficiary.subApplicantInfo.txtApplicantName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BGA,form1.BGA.applicantAndBeneficiary.subApplicantInfo.txtApplicantAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BGA,form1.BGA.applicantAndBeneficiary.subApplicantInfo.txtApplicantAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BGA,form1.BGA.applicantAndBeneficiary.subApplicantInfo.txtApplicantAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BGA,form1.BGA.applicantAndBeneficiary.subBeneficiaryInfo.txtBeneficiaryName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BGA,form1.BGA.applicantAndBeneficiary.subBeneficiaryInfo.txtBeneficiaryAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BGA,form1.BGA.applicantAndBeneficiary.subBeneficiaryInfo.txtBeneficiaryAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BGA,form1.BGA.applicantAndBeneficiary.subBeneficiaryInfo.drpBeneficiaryCountry,initialize,JavaScript,1,controlScript.populateCountryList
+BGA,form1.BGA.amendments.amount.chkAmendAmount,change,JavaScript,27,controlScript.accessChange controlScript.mandatoryChange
+BGA,form1.BGA.amendments.amount.chkAmendAmount,ready ($form),JavaScript,27,controlScript.accessChange controlScript.mandatoryChange
+BGA,form1.BGA.amendments.amount.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+BGA,form1.BGA.amendments.amount.drpCurrency,change,JavaScript,12,
+BGA,form1.BGA.amendments.amount.txtAmount,exit,JavaScript,4,
+BGA,form1.BGA.amendments.amount.txtAmount2,exit,JavaScript,4,
+BGA,form1.BGA.amendments.amount.drpCurrency2,initialize,JavaScript,1,controlScript.populateDropDownlist
+BGA,form1.BGA.amendments.amount.drpCurrency2,change,JavaScript,12,
+BGA,form1.BGA.amendments.expiryDate.chkAmendExpiryDate,change,JavaScript,11,controlScript.accessChange controlScript.mandatoryChange
+BGA,form1.BGA.amendments.expiryDate.chkAmendExpiryDate,ready ($form),JavaScript,11,controlScript.accessChange controlScript.mandatoryChange
+BGA,form1.BGA.amendments.expiryDate.txtExpiryDate,exit,JavaScript,10,controlScript.dateCompare controlScript.dateFormatChange
+BGA,form1.BGA.amendments.expiryDate.txtExpiryDate,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BGA,form1.BGA.amendments.claimExpiryDate.chkAmendClaimExpiryDate,change,JavaScript,11,controlScript.accessChange controlScript.mandatoryChange
+BGA,form1.BGA.amendments.claimExpiryDate.chkAmendClaimExpiryDate,ready ($form),JavaScript,11,controlScript.accessChange controlScript.mandatoryChange
+BGA,form1.BGA.amendments.claimExpiryDate.txtClaimExpiryDate,exit,JavaScript,11,controlScript.dateCompare controlScript.dateFormatChange
+BGA,form1.BGA.amendments.claimExpiryDate.txtClaimExpiryDate,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BGA,form1.BGA.amendments.claimPeriod.chkAmendClaimPeriod,change,JavaScript,15,controlScript.accessChange controlScript.mandatoryChange
+BGA,form1.BGA.amendments.claimPeriod.chkAmendClaimPeriod,ready ($form),JavaScript,15,controlScript.accessChange controlScript.mandatoryChange
+BGA,form1.BGA.amendments.claimPeriod.txtClaimPeriod,change,JavaScript,1,controlScript.forceNumberOnly
+BGA,form1.BGA.amendments.amendText.text.chkAmendText,change,JavaScript,11,controlScript.accessChange controlScript.mandatoryChange
+BGA,form1.BGA.amendments.amendText.text.chkAmendText,ready ($form),JavaScript,11,controlScript.accessChange controlScript.mandatoryChange
+BGA,form1.BGA.amendments.amendText.txtAmend,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BGA,form1.BGA.deliveryInstructions.#subform[0].radDelivery,change,JavaScript,61,controlScript.accessChange controlScript.mandatoryChange
+BGA,form1.BGA.deliveryInstructions.#subform[0].radDelivery,ready ($form),JavaScript,61,controlScript.accessChange controlScript.mandatoryChange
+BGA,form1.BGA.deliveryInstructions.#subform[0].txtContactName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BGA,form1.BGA.deliveryInstructions.#subform[0].txtPassportICNo,change,JavaScript,2,controlScript.changeUpper controlScript.forceAlphaNumericOnly
+BGA,form1.BGA.deliveryInstructions.#subform[0].txtPassportICNo,exit,JavaScript,6,
+BGA,form1.BGA.deliveryInstructions.#subform[0].txtTelNo,change,JavaScript,1,controlScript.forceNumberOnly
+BGA,form1.BGA.deliveryInstructions.#subform[0].txtAttn,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BGA,form1.BGA.deliveryInstructions.#subform[0].txtFreeText,change,JavaScript,1,controlScript.changeUpper
+BGA,form1.BGA.we.#subform[0].txtAccNo,change,JavaScript,2,controlScript.changeUpper controlScript.forceAlphaNumericOnly
+BGA,form1.BGA.we.#subform[0].txtAccNo,exit,JavaScript,6,
+BGA,form1.BGA.printAndBarcode.#subform[0].btnSave,click,JavaScript,2,barcodeScript.BGAbarcode
+BGA,form1.BGA.printAndBarcode.#subform[0].btnPrint,click,JavaScript,24,barcodeScript.BGAbarcode controlScript.checkSum controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+BGA,form1.BGA.printAndBarcode.#subform[1].PaperFormsBarcodeBGA_1,calculate,JavaScript,27,
+BGA,form1.BGA.printAndBarcode.#subform[1].PaperFormsBarcodeBGA_2,calculate,JavaScript,27,
+BGA,form1.BGA.printAndBarcode.#subform[1].PaperFormsBarcodeBGA_3,calculate,JavaScript,27,
+BGA,form1.BGA.printAndBarcode.#subform[1].PaperFormsBarcodeBGA_4,calculate,JavaScript,27,
+BG,form1.BG.BGBcode.txtBGDate,exit,JavaScript,6,controlScript.currentDate controlScript.dateFormatChange
+BG,form1.BG.BGBcode.txtBGDate,initialize,JavaScript,1,
+BG,form1.BG.BGBcode.txtBGDate,ready ($form),JavaScript,1,controlScript.currentDate
+BG,form1.BG.applicantAndBeneficiary.subApplicantInfo.txtBankCIFNo,change,JavaScript,1,controlScript.forceNumberOnly
+BG,form1.BG.applicantAndBeneficiary.subApplicantInfo.txtBankCIFNo,exit,JavaScript,6,
+BG,form1.BG.applicantAndBeneficiary.subApplicantInfo.txtApplicantName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.applicantAndBeneficiary.subApplicantInfo.txtApplicantAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.applicantAndBeneficiary.subApplicantInfo.txtApplicantAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.applicantAndBeneficiary.subApplicantInfo.txtApplicantAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.applicantAndBeneficiary.subApplicantInfo.txtContactName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.applicantAndBeneficiary.subApplicantInfo.txtTelNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.applicantAndBeneficiary.subApplicantInfo.txtFaxNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.applicantAndBeneficiary.subBeneficiaryInfo.txtRegistrationNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.applicantAndBeneficiary.subBeneficiaryInfo.txtBeneficiaryName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.applicantAndBeneficiary.subBeneficiaryInfo.txtBeneficiaryAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.applicantAndBeneficiary.subBeneficiaryInfo.txtBeneficiaryAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.applicantAndBeneficiary.subBeneficiaryInfo.drpBeneficiaryCountry,initialize,JavaScript,1,controlScript.populateCountryList
+BG,form1.BG.applicantAndBeneficiary.subBeneficiaryInfo.txtContactName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.applicantAndBeneficiary.subBeneficiaryInfo.txtTelNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.applicantAndBeneficiary.subBeneficiaryInfo.txtFaxNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.currencyAndAmount.subCurrenyAmount.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+BG,form1.BG.currencyAndAmount.subCurrenyAmount.drpCurrency,change,JavaScript,12,
+BG,form1.BG.currencyAndAmount.subCurrenyAmount.txtAmount,exit,JavaScript,4,
+BG,form1.BG.thirdPartyAndEffectiveDate.subThirdParty.txtThirdPartyName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.thirdPartyAndEffectiveDate.subThirdParty.txtThirdPartyAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.thirdPartyAndEffectiveDate.subThirdParty.txtThirdPartyAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.thirdPartyAndEffectiveDate.subThirdParty.txtThirdPartyAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.thirdPartyAndEffectiveDate.subEffectiveDate.effectiveDate.radEffectiveDate,change,JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+BG,form1.BG.thirdPartyAndEffectiveDate.subEffectiveDate.effectiveDate.radEffectiveDate,ready ($form),JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+BG,form1.BG.thirdPartyAndEffectiveDate.subEffectiveDate.effectiveDate.txtSpecificDate,exit,JavaScript,10,controlScript.checkOnExpiryDate controlScript.dateFormatChange controlScript.validateDate
+BG,form1.BG.thirdPartyAndEffectiveDate.subEffectiveDate.effectiveDate.txtSpecificDate,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.expiryDateAndClaimExpiryDate.expiryDate.expireDate.radExpiryDate,change,JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+BG,form1.BG.expiryDateAndClaimExpiryDate.expiryDate.expireDate.radExpiryDate,ready ($form),JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+BG,form1.BG.expiryDateAndClaimExpiryDate.expiryDate.expireDate.txtSpecificDate,exit,JavaScript,17,controlScript.checkOnExpiryDate controlScript.compareEffectiveDate controlScript.dateFormatChange controlScript.validateDate
+BG,form1.BG.expiryDateAndClaimExpiryDate.expiryDate.expireDate.txtSpecificDate,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.expiryDateAndClaimExpiryDate.claimExpiryDate.claimExpiryDate.radClaimExpiryDate,change,JavaScript,29,controlScript.accessChange controlScript.mandatoryChange
+BG,form1.BG.expiryDateAndClaimExpiryDate.claimExpiryDate.claimExpiryDate.radClaimExpiryDate,ready ($form),JavaScript,29,controlScript.accessChange controlScript.mandatoryChange
+BG,form1.BG.expiryDateAndClaimExpiryDate.claimExpiryDate.claimExpiryDate.txtSpecificDate,exit,JavaScript,9,controlScript.compareExpiryDate controlScript.dateFormatChange controlScript.validateDate
+BG,form1.BG.expiryDateAndClaimExpiryDate.claimExpiryDate.claimExpiryDate.txtSpecificDate,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.expiryDateAndClaimExpiryDate.claimExpiryDate.claimExpiryDate.txtClaimPeriod,change,JavaScript,1,controlScript.forceNumberOnly
+BG,form1.BG.requirementsOfIssuingBank.requirements.radRequirements,change,JavaScript,68,controlScript.accessChange controlScript.mandatoryChange controlScript.populateEntityList
+BG,form1.BG.requirementsOfIssuingBank.requirements.radRequirements,ready ($form),JavaScript,67,controlScript.accessChange controlScript.mandatoryChange controlScript.populateEntityList
+BG,form1.BG.requirementsOfIssuingBank.requirements.drpEntity,change,JavaScript,24,controlScript.accessChange controlScript.getBranchName controlScript.mandatoryChange
+BG,form1.BG.requirementsOfIssuingBank.requirements.drpBranchCountry,change,JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+BG,form1.BG.requirementsOfIssuingBank.requirements.txtIssueBankName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.requirementsOfIssuingBank.requirements.txtSwiftAddress,exit,JavaScript,5,
+BG,form1.BG.requirementsOfIssuingBank.requirements.txtSwiftAddress,change,JavaScript,2,controlScript.changeUpper controlScript.forceAlphaNumericOnly
+BG,form1.BG.requirementsOfIssuingBank.requirements.txtOthersEntity,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.requirementsOfIssuingBank.requirements.txtOthersBranch,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.deliveryInstructions.subDeliveryIns.sectionA.radSG,change,JavaScript,16,controlScript.accessChange controlScript.mandatoryChange
+BG,form1.BG.deliveryInstructions.subDeliveryIns.sectionA.radSG,ready ($form),JavaScript,16,controlScript.accessChange controlScript.mandatoryChange
+BG,form1.BG.deliveryInstructions.subDeliveryIns.sectionA.txtAdviseBankName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.deliveryInstructions.subDeliveryIns.sectionA.txtSwiftAddress,exit,JavaScript,5,
+BG,form1.BG.deliveryInstructions.subDeliveryIns.sectionA.txtSwiftAddress,change,JavaScript,2,controlScript.changeUpper controlScript.forceAlphaNumericOnly
+BG,form1.BG.deliveryInstructions.subDeliveryIns.sectionB.radNonSG,change,JavaScript,28,controlScript.accessChange controlScript.mandatoryChange
+BG,form1.BG.deliveryInstructions.subDeliveryIns.sectionB.radNonSG,ready ($form),JavaScript,28,controlScript.accessChange controlScript.mandatoryChange
+BG,form1.BG.deliveryInstructions.subDeliveryIns.sectionB.txtMrs,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.deliveryInstructions.subDeliveryIns.sectionB.txtPassportNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.deliveryInstructions.subDeliveryIns.sectionB.txtAt,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.deliveryInstructions.subDeliveryIns.sectionB.txtMobileNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.guaranteesFormat.txtGuaranteesFormat,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.specialInstructions.txtSpecialInstructions,change,JavaScript,1,controlScript.changeUpper
+BG,form1.BG.allFees.subBGAcNo.txtAccNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.allFees.subHeader.txtAccNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+BG,form1.BG.printAndBarcode.#subform[0].btnSave,click,JavaScript,2,barcodeScript.BGbarcode
+BG,form1.BG.printAndBarcode.#subform[0].btnPrint,click,JavaScript,65,barcodeScript.BGbarcode controlScript.checkSum controlScript.dateFormatChangeMainPage controlScript.mandatoryColor controlScript.normalColor controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+BG,form1.BG.printAndBarcode.#subform[1].PaperFormsBarcodeBG_1,calculate,JavaScript,27,
+BG,form1.BG.printAndBarcode.#subform[1].PaperFormsBarcodeBG_2,calculate,JavaScript,27,
+BG,form1.BG.printAndBarcode.#subform[1].PaperFormsBarcodeBG_3,calculate,JavaScript,27,
+BG,form1.BG.printAndBarcode.#subform[1].PaperFormsBarcodeBG_4,calculate,JavaScript,27,
+BG,form1.BG.printAndBarcode.#subform[1].PaperFormsBarcodeBG_5,calculate,JavaScript,27,
+BG,form1.BG.printAndBarcode.#subform[1].PaperFormsBarcodeBG_6,calculate,JavaScript,27,
+BG,form1.BG.printAndBarcode.#subform[1].PaperFormsBarcodeBG_7,calculate,JavaScript,27,
+BG,form1.BG.printAndBarcode.#subform[1].PaperFormsBarcodeBG_8,calculate,JavaScript,27,
+BG,form1.BG.printAndBarcode.#subform[1].PaperFormsBarcodeBG_9,calculate,JavaScript,27,
+BG,form1.BG.printAndBarcode.#subform[1].PaperFormsBarcodeBG_10,calculate,JavaScript,27,
+EXPORT,form1.EXPORT.EXPORTBcode.txtEXPORTDate,exit,JavaScript,6,controlScript.currentDate controlScript.dateFormatChange
+EXPORT,form1.EXPORT.EXPORTBcode.txtEXPORTDate,initialize,JavaScript,1,
+EXPORT,form1.EXPORT.EXPORTBcode.txtEXPORTDate,ready ($form),JavaScript,1,controlScript.currentDate
+EXPORT,form1.EXPORT.subfrm.applicant.subfrmApplicant.txtName,full,JavaScript,1,
+EXPORT,form1.EXPORT.subfrm.applicant.subfrmApplicant.txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.applicant.subfrmApplicant.txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.applicant.subfrmApplicant.txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.applicant.subfrmApplicant.txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.applicant.subfrmApplicant.txtContractName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.applicant.subfrmApplicant.txtTel,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.applicant.subfrmApplicant.txtFax,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.applicant.subfrmShipment.radShipment,change,JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.applicant.subfrmShipment.radShipment,ready ($form),JavaScript,12,controlScript.accessChange controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.applicant.subfrmShipment.txtCreditNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.applicant.subfrmShipment.txtCreditNo,exit,JavaScript,24,
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrm3PartyBeneficiary.txtName,full,JavaScript,1,
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrm3PartyBeneficiary.txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrm3PartyBeneficiary.txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrm3PartyBeneficiary.txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrm3PartyBeneficiary.txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmBuyer.subBName.txtBName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmBuyer.#subform[0].add.btnAdd,click,JavaScript,12,
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmBuyer.#subform[0].delete.btnDelete,click,JavaScript,2,
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmBuyer.#subform[0].delete.btnDelete,initialize,JavaScript,1,
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmSupDetails.txtName,full,JavaScript,3,
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmSupDetails.txtName,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmSupDetails.txtCity,full,JavaScript,1,
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmSupDetails.txtCity,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmSupDetails.txtAddress1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmSupDetails.txtAddress2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmSupDetails.txtAddress3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmBillAmount.drpCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmBillAmount.drpCurrency,change,JavaScript,14,
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmBillAmount.drpCurrency,exit,JavaScript,15,
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmBillAmount.txtAmount,exit,JavaScript,6,
+EXPORT,form1.EXPORT.subfrm.thirdParty.subfrmBillAmount.txtAmount,change,JavaScript,1,controlScript.ForceNumberAndDecimalOnly
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmFinancing.drpFinanceCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmFinancing.drpFinanceCurrency,change,JavaScript,14,
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmFinancing.txtdays,change,JavaScript,4,controlScript.changeUpper controlScript.forceNumberOnly controlScript.lengthLimit
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmFinancing.txtContractNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmFinancing.txtAmount,exit,JavaScript,7,
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmFinancing.txtAmount,change,JavaScript,1,controlScript.ForceNumberAndDecimalOnly
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmContract.subFx.txtFXContractSeq,change,JavaScript,1,controlScript.forceNumberOnly
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmContract.subFx.txtFXContractSeq,exit,JavaScript,6,controlScript.empty
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmContract.subFx.txtContractNo,change,JavaScript,1,controlScript.forceNumberOnly
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmContract.subFx.txtContractNo,exit,JavaScript,12,controlScript.empty
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmContract.subFx.txtAmount,exit,JavaScript,6,
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmContract.subFx.txtAmount,change,JavaScript,1,controlScript.ForceNumberAndDecimalOnly
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmContract.#subform[0].add.btnAdd,click,JavaScript,15,
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmContract.#subform[0].add.btnAdd,initialize,JavaScript,1,
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmContract.#subform[0].delete.btnDelete,click,JavaScript,2,
+EXPORT,form1.EXPORT.subfrm.#subform[0].subfrmContract.#subform[0].delete.btnDelete,initialize,JavaScript,1,
+EXPORT,form1.EXPORT.subfrm.#subform[0].#subform[0].subPurchase.radDescrip,change,JavaScript,16,controlScript.accessChange controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.#subform[0].#subform[0].subPurchase.radDescrip,ready ($form),JavaScript,16,controlScript.accessChange controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.#subform[0].#subform[0].subPurchase.txtServices,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.#subform[0].#subform[0].subPurchase.txtGoods,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.#subform[0].#subform[0].subfrmDescription.txtDescription1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.#subform[0].#subform[0].subfrmDescription.txtDescription2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.#subform[0].#subform[0].subfrmDescription.txtDescription3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.#subform[0].#subform[0].subfrmDescription.txtDescription4,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.#subform[0].#subform[0].subfrmDescription.txtDescription5,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.briefDescription.subfrmDescription.txtDescription1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.briefDescription.subfrmDescription.txtDescription2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.briefDescription.subfrmDescription.txtDescription3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.briefDescription.subfrmDescription.txtDescription4,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.briefDescription.subfrmDescription.txtDescription5,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.briefDescription.subfrmFinancing.drpFinanceCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+EXPORT,form1.EXPORT.subfrm.briefDescription.subfrmFinancing.txtDays,change,JavaScript,2,controlScript.changeUpper controlScript.lengthLimit
+EXPORT,form1.EXPORT.subfrm.briefDescription.subfrmFinancing.txtContractNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowDocuments.txtInvoice,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowDocuments.txtLanding,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowDocuments.txtAirBill,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowDocuments.txtDelivery,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowDocuments.txtLCOriginal,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowDocuments.txtLCAmdt,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowDocuments.txtInput1,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowDocuments.txtInput2,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowCopies.txtInput1,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowCopies.txtInput2,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowCopies.txtInput3,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowCopies.txtInput4,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowCopies.txtInput5,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowCopies.txtInput6,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowCopies.txtInput7,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.docAttached.Table.rowCopies.txtInput8,change,JavaScript,1,controlScript.changeUpper
+EXPORT,form1.EXPORT.subfrm.disbursement.radDisbursement,change,JavaScript,34,controlScript.accessChange controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.disbursement.radDisbursement,ready ($form),JavaScript,25,controlScript.accessChange controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.disbursement.txtCreditAccNo,change,JavaScript,6,controlScript.forceNumberOnly controlScript.lengthLimit
+EXPORT,form1.EXPORT.subfrm.disbursement.txtCreditAccNo,exit,JavaScript,15,
+EXPORT,form1.EXPORT.subfrm.disbursement.txtOthers1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.disbursement.txtOthers2,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.disbursement.txtOthers3,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.disbursement.drpCCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+EXPORT,form1.EXPORT.subfrm.disbursement.drpCCurrency,change,JavaScript,1,
+EXPORT,form1.EXPORT.subfrm.disbursement.drpCCurrency,exit,JavaScript,10,controlScript.changeNormalColor controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.txtDebitAcc,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.txtDebitAcc,exit,JavaScript,5,
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.drpDebitCurrency,initialize,JavaScript,1,controlScript.populateDropDownlist
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.drpDebitCurrency,exit,JavaScript,15,
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[0].txtFXContractNo,change,JavaScript,1,controlScript.forceNumberOnly
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[0].txtFXContractNo,exit,JavaScript,12,controlScript.empty
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[0].txtFXContractSeq,change,JavaScript,1,controlScript.forceNumberOnly
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[0].txtFXContractSeq,exit,JavaScript,6,controlScript.empty
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[1].drpCurrency1,initialize,JavaScript,1,controlScript.populateDropDownlist
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[1].drpCurrency1,change,JavaScript,12,
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[1].drpCurrency1,exit,JavaScript,48,controlScript.changeNormalColor controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[1].txtAccount,exit,JavaScript,58,controlScript.changeNormalColor controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[1].txtAccount,change,JavaScript,1,controlScript.forceNumberOnly
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[2].drpCurrency2,initialize,JavaScript,1,controlScript.populateDropDownlist
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[2].drpCurrency2,exit,JavaScript,41,controlScript.changeNormalColor controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[2].txtDebitAccNo,exit,JavaScript,49,controlScript.changeNormalColor controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[2].txtDebitAccNo,change,JavaScript,1,controlScript.forceNumberOnly
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[3].drpCurrency3,initialize,JavaScript,1,controlScript.populateDropDownlist
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[3].txtInterestAccNo,exit,JavaScript,23,
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subDetails.details.#subform[3].txtInterestAccNo,change,JavaScript,1,controlScript.forceNumberOnly
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.radDebit,change,JavaScript,31,controlScript.accessChange controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.#subform[0].drpRe_Currency,initialize,JavaScript,1,controlScript.populateDropDownlist
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.#subform[0].drpRe_Currency,exit,JavaScript,10,controlScript.changeNormalColor controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.#subform[0].drpRe_Currency,change,JavaScript,1,
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.#subform[0].txtRe_Account,exit,JavaScript,20,controlScript.changeNormalColor controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.#subform[0].txtRe_Account,change,JavaScript,5,controlScript.forceNumberOnly controlScript.lengthLimit
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.drpA_Currency,initialize,JavaScript,1,controlScript.populateDropDownlist
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.drpA_Currency,exit,JavaScript,10,controlScript.changeNormalColor controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.drpA_Currency,change,JavaScript,1,
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.txtA_Account,exit,JavaScript,21,controlScript.changeNormalColor controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.txtA_Account,change,JavaScript,6,controlScript.forceNumberOnly controlScript.lengthLimit
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.drpF_Currency,initialize,JavaScript,1,controlScript.populateDropDownlist
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.drpF_Currency,exit,JavaScript,10,controlScript.changeNormalColor controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.drpF_Currency,change,JavaScript,1,
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.txtF_Account,exit,JavaScript,20,controlScript.changeNormalColor controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.txtF_Account,change,JavaScript,5,controlScript.forceNumberOnly controlScript.lengthLimit
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.txtL_Account,exit,JavaScript,19,controlScript.changeNormalColor controlScript.mandatoryChange
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.txtL_Account,change,JavaScript,2,controlScript.forceNumberOnly controlScript.lengthLimit
+EXPORT,form1.EXPORT.subfrm.subfrmDebitComm.subOthers.txtOthers1,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.bankCharges.txtAccNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.settlement.txtAccNo,change,JavaScript,2,controlScript.changeUpper controlScript.validateRegularExpChange
+EXPORT,form1.EXPORT.subfrm.printAndBarcode.#subform[0].btnSave,click,JavaScript,2,barcodeScript.EXPORTbarcode
+EXPORT,form1.EXPORT.subfrm.printAndBarcode.#subform[0].btnPrint,click,JavaScript,35,barcodeScript.EXPORTbarcode controlScript.checkSum controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor errorMessage.msgMandatoryEmpty
+EXPORT,form1.EXPORT.subfrm.printAndBarcode.#subform[1].PaperFormsBarcodeEXPORT_1,calculate,JavaScript,27,
+EXPORT,form1.EXPORT.subfrm.printAndBarcode.#subform[1].PaperFormsBarcodeEXPORT_2,calculate,JavaScript,27,
+form1,form1,initialize,JavaScript,1,controlScript.init
+form1,form1,prePrint ($host),JavaScript,82,barcodeScript.EBLCbarcode barcodeScript.LCbarcode barcodeScript.OBCbarcode controlScript.checkSum controlScript.dateFormatChangeMainPage controlScript.normalColor controlScript.radioMandatoryCheck controlScript.selectMandaotoryField controlScript.setMandatoryBackColor
+form1,form1,ready ($form),JavaScript,1,controlScript.versionCheck
