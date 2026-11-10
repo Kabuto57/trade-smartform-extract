@@ -1,0 +1,25 @@
+trigger_field,when_value,negated,makes_mandatory
+subfrmLC.subfrmCreditAmount.chkTolerance,1,,subfrmLC.subfrmCreditAmount.txtPlusValue
+subfrmLC.subfrmCreditAmount.chkTolerance,1,,subfrmLC.subfrmCreditAmount.txtMinusValue
+subfrmLC.subfrmPriceBasis.RadioButtonList,Others,,subfrmLC.subfrmPriceBasis.txtOthers
+subfrmLC.subfrmDrafts.sufrmDraft.radDrafts,Term,,subfrmLC.subfrmDrafts.sufrmDraft.txtTerm
+subfrmLC.subfrmDrafts.sufrmDraft.radDrafts,Term,,subfrmLC.subfrmDrafts.sufrmDraft.txtDaysAfter
+subfrmLC.subfrmDrafts.sufrmDraft.radDrafts,Date,,subfrmLC.subfrmDrafts.sufrmDraft.txtDate
+subfrmLC.subfrmDrafts.chkFullSet,1,,subfrmLC.subfrmDrafts.radConsignee
+subfrmLC.subfrmDrafts.chkFullSet,1,,subfrmLC.subfrmDrafts.radFreight
+subfrmLC.subfrmDrafts.chkFullSet,1,,subfrmLC.subfrmDrafts.txtNotifyParty
+subfrmLC.subfrmDrafts.radConsignee,3,,subfrmLC.subfrmDrafts.txtFullSet
+subfrmLC.subfrmOriginalAirWaybill.chkOriginalAirWaybill,1,,subfrmLC.subfrmOriginalAirWaybill.radioButtonList
+subfrmLC.subfrmOriginalAirWaybill.chkOriginalAirWaybill,1,,subfrmLC.subfrmOriginalAirWaybill.txtNotifyParty
+subfrmLC.subfrmTransportDocumentsByDO.chkDeliveryOrderIn,1,,subfrmLC.subfrmTransportDocumentsByDO.txtOriginals
+subfrmLC.subfrmTransportDocumentsByDO.chkDeliveryOrderIn,1,,subfrmLC.subfrmTransportDocumentsByDO.txtCopies
+subfrmLC.subfrmTransportDocumentsByDO.chkDeliveryOrderIn,1,,subfrmLC.subfrmTransportDocumentsByDO.drpCountersignedBy
+subfrmLC.subfrmTransportDocumentsByDO.chkDeliveryOrderIn,1,,subfrmLC.subfrmTransportDocumentsByDO.drpWhoseSignature
+subfrmLC.subfrmInsurance.drpForFOBCFR,Insurance covered by applicant under open Cover No.,,subfrmLC.subfrmInsurance.subfrmCoverNo.txtCoverNo
+subfrmLC.subfrmInsurance.drpForFOBCFR,Insurance covered by applicant under open Cover No.,,subfrmLC.subfrmInsurance.subfrmCoverNo.txtWith
+subfrmLCFoot.subfrmOtherDoc.chkBeneficiaryCertificate,1,,subfrmLCFoot.subfrmOtherDoc.txtOtherDoc
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmBankCharges.chkBankCharges,1,,subfrmLCFoot.subfrmDetails.subfrmOne.subfrmBankCharges.radChargeAccount
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmConfirmation.chkConfirmation,1,,subfrmLCFoot.subfrmDetails.subfrmOne.subfrmConfirmation.radioButtonList
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.chkTrustReceipts,1,,subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.radTrustReceipts
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.radTrustReceipts,2,,subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.txtForgeign
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.radTrustReceipts,3,,subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.txtApplyForward

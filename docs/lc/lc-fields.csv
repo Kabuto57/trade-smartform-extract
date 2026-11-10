@@ -1,0 +1,138 @@
+path,group,caption,type,max_chars,display_pattern,options,always_mandatory,mandatory_when_rules,access_at_open,presence_at_open,data_binding,scripts
+LCBcode.Code3of9BarCode3,LCBcode,,barcode,,,,,,readOnly,hidden,once,
+LCBcode.Code128BarCode1,LCBcode,,barcode,,,,,,readOnly,visible,once,
+subfrmLC.subfrmModeOfAdvising.RadioButtonList,subfrmModeOfAdvising,,radio group,,,Full Swift; Registered Airmail; Airmail with Brief Swift; Courier Service; Courier Service with Brief Swift,,,open,visible,none,
+subfrmLC.subfrmApplicant.txtName,subfrmApplicant,Applicant Name: *,textEdit,35,,,yes,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmApplicant.txtAddress1,subfrmApplicant,Applicant Address:*,textEdit,35,,,yes,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmApplicant.txtAddress2,subfrmApplicant,,textEdit,35,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmApplicant.txtAddress3,subfrmApplicant,,textEdit,35,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmApplicant.txtContractName,subfrmApplicant,Name: *,textEdit,35,,,yes,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmApplicant.txtTel,subfrmApplicant,Tel No: *,textEdit,15,,,yes,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmApplicant.txtFax,subfrmApplicant,Fax No:,textEdit,15,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmForBankUse.subfrmForBankUse.subfrmDCNo.txtDCNo,subfrmForBankUse,DC No:,textEdit,,,,,,open,visible,none,change:changeUpper
+subfrmLC.subfrmForBankUse.subfrmForBankUse.subfrmBankCode.txtBankCode,subfrmForBankUse,Bank Code:,textEdit,,,,,,protected,visible,none,change:changeUpper
+subfrmLC.subfrmForBankUse.subfrmAdvisingBank.txtName,subfrmForBankUse,Name:,textEdit,35,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmForBankUse.subfrmAdvisingBank.txtAddress1,subfrmForBankUse,Address:,textEdit,35,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmForBankUse.subfrmAdvisingBank.txtAddress2,subfrmForBankUse,,textEdit,35,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmForBankUse.subfrmAdvisingBank.txtAddress3,subfrmForBankUse,,textEdit,35,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrm3PartyBeneficiary.txtName,subfrm3PartyBeneficiary,Name:,textEdit,35,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrm3PartyBeneficiary.txtAddress1,subfrm3PartyBeneficiary,Address:,textEdit,35,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrm3PartyBeneficiary.txtAddress2,subfrm3PartyBeneficiary,,textEdit,35,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrm3PartyBeneficiary.txtAddress3,subfrm3PartyBeneficiary,,textEdit,35,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmBeneficiary.txtName,subfrmBeneficiary,Beneficiary's Name: *,textEdit,35,,,yes,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmBeneficiary.txtAddress1,subfrmBeneficiary,Beneficiary's Address: *,textEdit,35,,,yes,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmBeneficiary.txtAddress2,subfrmBeneficiary,,textEdit,35,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmBeneficiary.txtAddress3,subfrmBeneficiary,,textEdit,35,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmBeneficiary.txtContractName,subfrmBeneficiary,Contact Person:,textEdit,35,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmBeneficiary.txtTel,subfrmBeneficiary,Tel No:,textEdit,15,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmBeneficiary.txtFax,subfrmBeneficiary,Fax No:,textEdit,15,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmCreditAmount.drpCurrency,subfrmCreditAmount,Currency: *,choiceList,,,,yes,,open,visible,none,initialize:populateDropDownlist
+subfrmLC.subfrmCreditAmount.txtAmount,subfrmCreditAmount,Amount: *,numericEdit,,,,yes,,open,visible,none,
+subfrmLC.subfrmCreditAmount.radGST,subfrmCreditAmount,,radio group,,,inclusive of GST=GSY; No GST=GSN,,,open,visible,none,
+subfrmLC.subfrmCreditAmount.chkTolerance,subfrmCreditAmount,Tolerance on credit amount & goods quantity:,checkButton,,,1; 0; 2,,,open,visible,none,change:accessChange; change:mandatoryChange; ready ($form):accessChange; ready ($form):mandatoryChange
+subfrmLC.subfrmCreditAmount.txtPlusValue,subfrmCreditAmount,,textEdit,2,,,,1,readOnly,visible,once,change:changeUpper; exit:mandatoryChange
+subfrmLC.subfrmCreditAmount.txtMinusValue,subfrmCreditAmount,,textEdit,2,,,,1,readOnly,visible,none,change:changeUpper; exit:mandatoryChange
+subfrmLC.subfrmPriceBasis.RadioButtonList,subfrmPriceBasis,,radio group,,,FOB; CFR; CIF; Local Delivery; FCA; CIP; CPT; Others,yes,,open,visible,none,change:accessChange; change:mandatoryChange; change:presenceChange; ready ($form):accessChange; ready ($form):mandatoryChange; ready ($form):presenceChange
+subfrmLC.subfrmPriceBasis.txtOthers,subfrmPriceBasis,,textEdit,35,,,,1,readOnly,visible,none,change:changeUpper
+subfrmLC.subfrmPartialshipment.radPartialShipment,subfrmPartialshipment,,radio group,,,allowed=Y; not allowed=N,yes,,open,visible,none,
+subfrmLC.subfrmPartialshipment.radTranshipment,subfrmPartialshipment,,radio group,,,allowed=Y; not allowed=N,yes,,open,visible,none,
+subfrmLC.subfrmShipmentFrom.drpPortOfLoading,subfrmShipmentFrom,,choiceList,,,<Select value for Shipment From>; Port of Loading / Airport of Departure; Dispatch from; Place of Taking in charge; Place of Receipt,,,open,visible,none,change:presenceChange; initialize:presenceChange
+subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmPlaceOfReceipt.txtPlaceOfReceipt1,subfrmShipmentFrom,,textEdit,35,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtPlaceOfReceipt1.rawValue,txtPlaceOfReceipt2.rawValue,1)"
+subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmPlaceOfReceipt.txtPlaceOfReceipt2,subfrmShipmentFrom,,textEdit,,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtPlaceOfReceipt1.rawValue,txtPlaceOfReceipt2.rawValue,2)"
+subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmPlaceOfTakingInCharge.txtPlaceOfTakingInCharge1,subfrmShipmentFrom,,textEdit,35,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtPlaceOfTakingInCharge1.rawValue,txtPlaceOfTakingInCharge2.rawValue,1)"
+subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmPlaceOfTakingInCharge.txtPlaceOfTakingInCharge2,subfrmShipmentFrom,,textEdit,,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtPlaceOfTakingInCharge1.rawValue,txtPlaceOfTakingInCharge2.rawValue,2)"
+subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmDispatchfrom.txtDispatchfrom1,subfrmShipmentFrom,,textEdit,35,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtDispatchfrom1.rawValue,txtDispatchfrom2.rawValue,1)"
+subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmDispatchfrom.txtDispatchfrom2,subfrmShipmentFrom,,textEdit,,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtDispatchfrom1.rawValue,txtDispatchfrom2.rawValue,2)"
+subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmPortOfLoad.txtLoading1,subfrmShipmentFrom,,textEdit,35,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtLoading1.rawValue,txtLoading2.rawValue,1)"
+subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmPortOfLoad.txtLoading2,subfrmShipmentFrom,,textEdit,,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtLoading1.rawValue,txtLoading2.rawValue,2)"
+subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmAirportOfDeparture.txtDeparture1,subfrmShipmentFrom,,textEdit,35,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtDeparture1.rawValue,txtDeparture2.rawValue,1)"
+subfrmLC.subfrmShipmentFrom.subfrmLoadDeparture.subfrmAirportOfDeparture.txtDeparture2,subfrmShipmentFrom,,textEdit,,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtDeparture1.rawValue,txtDeparture2.rawValue,2)"
+subfrmLC.subfrmShipmentTo.drpPortOfDischarge,subfrmShipmentTo,,choiceList,,,<Select value for Shipment To>; Port of Discharge / Airport of Destination; For Transportation to; Place of Final Destination; Place of Delivery,,,open,visible,none,change:presenceChange; initialize:presenceChange
+subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmForTransportationTo.txtForTransportationTo1,subfrmShipmentTo,,textEdit,35,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtForTransportationTo1.rawValue,txtForTransportationTo2.rawValue,1)"
+subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmForTransportationTo.txtForTransportationTo2,subfrmShipmentTo,,textEdit,,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtForTransportationTo1.rawValue,txtForTransportationTo2.rawValue,2)"
+subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmDestination.txtDestination1,subfrmShipmentTo,,textEdit,35,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtDestination1.rawValue,txtDestination2.rawValue,1)"
+subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmDestination.txtDestination2,subfrmShipmentTo,,textEdit,,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtDestination1.rawValue,txtDestination2.rawValue,2)"
+subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmPlaceOfFinalDestination.txtPlaceOfFinalDestination1,subfrmShipmentTo,,textEdit,35,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtPlaceOfFinalDestination1.rawValue,txtPlaceOfFinalDestination2.rawValue,1)"
+subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmPlaceOfFinalDestination.txtPlaceOfFinalDestination2,subfrmShipmentTo,,textEdit,,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtPlaceOfFinalDestination1.rawValue,txtPlaceOfFinalDestination2.rawValue,2)"
+subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmPlaceOfDelivery.txtPlaceOfDelivery1,subfrmShipmentTo,,textEdit,35,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtPlaceOfDelivery1.rawValue,txtPlaceOfDelivery2.rawValue,1)"
+subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmPlaceOfDelivery.txtPlaceOfDelivery2,subfrmShipmentTo,,textEdit,,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtPlaceOfDelivery1.rawValue,txtPlaceOfDelivery2.rawValue,2)"
+subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmDischarge.txtDischarge1,subfrmShipmentTo,,textEdit,35,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtDischarge1.rawValue,txtDischarge2.rawValue,1)"
+subfrmLC.subfrmShipmentTo.subfrmDischargeDestination.subfrmDischarge.txtDischarge2,subfrmShipmentTo,,textEdit,,,,,,open,visible,none,"change:changeUpper; change:checkMaxLength(txtDischarge1.rawValue,txtDischarge2.rawValue,2)"
+subfrmLC.subfrmShipmentDate.txtDate,subfrmShipmentDate,,dateTimeEdit,,"date{DD MMM, YYYY}",,,,open,visible,none,change:changeUpper; exit:dateCompare; exit:dateFormatChange
+subfrmLC.subfrmDateOfExpiry.txtDate,subfrmDateOfExpiry,,dateTimeEdit,,"date{DD MMM, YYYY}",,yes,,open,visible,none,change:changeUpper; exit:dateCompare; exit:dateFormatChange
+subfrmLC.subfrmPresentation.txtPeriod,subfrmPresentation,,numericEdit,,,,,,open,visible,none,change:lengthLimit(2)
+subfrmLC.subfrmDrafts.subfrmBtoB.txtCrNo,subfrmDrafts,,textEdit,20,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmDrafts.subfrmBtoB.txtIssuBy,subfrmDrafts,,textEdit,35,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmDrafts.subfrmBtoB.chkBTB,subfrmDrafts,,checkButton,,,1; 0; 2,,,open,visible,once,change:accessChange; change:mandatoryChange; ready ($form):accessChange; ready ($form):mandatoryChange
+subfrmLC.subfrmDrafts.sufrmDraft.chkDraft,subfrmDrafts,Drafts for 100% invoice value at,checkButton,,,1; 0; 2,,,open,visible,once,change:accessChange; change:mandatoryChange; ready ($form):accessChange; ready ($form):mandatoryChange
+subfrmLC.subfrmDrafts.sufrmDraft.radDrafts,subfrmDrafts,,radio group,,,Sight or=Sight; Term:=Term; =Date,,,readOnly,visible,once,change:accessChange; change:accessChanger; change:mandatoryChange; ready ($form):accessChange; ready ($form):accessChanger; ready ($form):mandatoryChange
+subfrmLC.subfrmDrafts.sufrmDraft.txtTerm,subfrmDrafts,,numericEdit,,,,,1,readOnly,visible,once,change:changeUpper; change:lengthLimit(3); exit:plusNumeric
+subfrmLC.subfrmDrafts.sufrmDraft.txtDaysAfter,subfrmDrafts,days after,textEdit,35,,,,1,readOnly,visible,once,change:changeUpper
+subfrmLC.subfrmDrafts.sufrmDraft.radTerm,subfrmDrafts,,radio group,,,You may prepay the acceptance of this term LC at the cost of beneficiary=Prepay; You may not prepay the acceptance of this term LC=NonPrepay,,,readOnly,hidden,none,change:mandatoryChange
+subfrmLC.subfrmDrafts.sufrmDraft.txtDate,subfrmDrafts,,dateTimeEdit,,"date{DD MMM, YYYY}",,,1,readOnly,visible,none,change:changeUpper; exit:dateCompare; exit:dateFormatChange
+subfrmLC.subfrmDrafts.chkFullSet,subfrmDrafts,Full set of Clean on Board marine bills of lading made out to:,checkButton,,,1; 0; 2,,,open,visible,none,change:accessChange; change:concatValue; change:mandatoryChange; change:radioMandatoryCheck; ready ($form):accessChange; ready ($form):mandatoryChange; ready ($form):radioMandatoryCheck
+subfrmLC.subfrmDrafts.txtFullSet,subfrmDrafts,,textEdit,70,,,,1,readOnly,visible,none,change:changeUpper
+subfrmLC.subfrmDrafts.radConsignee,subfrmDrafts,,radio group,,,"order of the Bank Ltd or=1; order blank endorsed, marked Freight=2; =3",,1,readOnly,visible,none,change:accessChange; change:mandatoryChange; ready ($form):accessChange; ready ($form):mandatoryChange
+subfrmLC.subfrmDrafts.radFreight,subfrmDrafts,,radio group,,,Prepaid or=Prepaid; Collect,,1,readOnly,visible,none,
+subfrmLC.subfrmDrafts.txtNotifyParty,subfrmDrafts,Notify party:,textEdit,114,,,,1,readOnly,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmOriginalAirWaybill.chkOriginalAirWaybill,subfrmOriginalAirWaybill,Original Air Waybill consigned to the Bank Ltd marked Freight,checkButton,,,1; 0; 2,,,open,visible,none,change:accessChange; change:concatValue; change:mandatoryChange; change:radioMandatoryCheck; ready ($form):accessChange; ready ($form):mandatoryChange; ready ($form):radioMandatoryCheck
+subfrmLC.subfrmOriginalAirWaybill.radioButtonList,subfrmOriginalAirWaybill,,radio group,,,Prepaid or=Prepaid; Collect,,1,readOnly,visible,none,
+subfrmLC.subfrmOriginalAirWaybill.txtNotifyParty,subfrmOriginalAirWaybill,Notify party:,textEdit,114,,,,1,readOnly,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLC.subfrmTransportDocumentsByDO.chkDeliveryOrderIn,subfrmTransportDocumentsByDO,Delivery order in,checkButton,,,1; 0; 2,,,open,visible,none,change:accessChange; change:mandatoryChange; ready ($form):accessChange; ready ($form):mandatoryChange
+subfrmLC.subfrmTransportDocumentsByDO.txtOriginals,subfrmTransportDocumentsByDO,originals,numericEdit,,,,,1,readOnly,visible,none,change:changeUpper; change:lengthLimit(2); exit:plusNumeric
+subfrmLC.subfrmTransportDocumentsByDO.txtCopies,subfrmTransportDocumentsByDO,copies,numericEdit,,,,,1,readOnly,visible,none,change:changeUpper; change:lengthLimit(2); exit:plusNumeric
+subfrmLC.subfrmTransportDocumentsByDO.drpCountersignedBy,subfrmTransportDocumentsByDO,,choiceList,,,One; Two,,1,readOnly,visible,none,change:changeUpper
+subfrmLC.subfrmTransportDocumentsByDO.drpWhoseSignature,subfrmTransportDocumentsByDO,,choiceList,,,need; need not,,1,readOnly,visible,none,change:changeUpper
+subfrmLC.subfrmInsurance.chkInsurance,subfrmInsurance,"Marine/Air Insurance Policy or Certificate in duplicate showing beneficiary as assured, blank endorsed for 110% of invoice value with claims payable",checkButton,,,1; 0; 2,,,open,visible,none,
+subfrmLC.subfrmInsurance.drpForFOBCFR,subfrmInsurance,,choiceList,,,Insurance cover note attached; Covered by ultimate buyer; Please arrange insurance on our behalf; Insurance covered by applicant under open Cover No.,,,open,hidden,none,change:mandatoryChange; change:presenceChange; ready ($form):mandatoryChange; ready ($form):presenceChange
+subfrmLC.subfrmInsurance.subfrmCoverNo.txtCoverNo,subfrmInsurance,,textEdit,20,,,,1,open,visible,none,change:changeUpper
+subfrmLC.subfrmInsurance.subfrmCoverNo.txtWith,subfrmInsurance,with,textEdit,35,,,,1,open,visible,none,change:changeUpper
+subfrmLC.subfrmBeneficiaryCertificate.chkBeneficiaryCertificate,subfrmBeneficiaryCertificate,Beneficiary's certificate stating 1 set of non-negotiable documents have been,checkButton,,,1; 0; 2,,,open,visible,none,change:accessChange; change:mandatoryChange; ready ($form):accessChange; ready ($form):mandatoryChange
+subfrmLC.subfrmBeneficiaryCertificate.chkFaxed,subfrmBeneficiaryCertificate,"faxed,",checkButton,,,1; 0; 2,,,readOnly,visible,none,change:mandatoryChange
+subfrmLC.subfrmBeneficiaryCertificate.chkMailed,subfrmBeneficiaryCertificate,"mailed,",checkButton,,,1; 0; 2,,,readOnly,visible,none,change:mandatoryChange
+subfrmLC.subfrmBeneficiaryCertificate.chkCouriered,subfrmBeneficiaryCertificate,couriered to,checkButton,,,1; 0; 2,,,readOnly,visible,none,change:mandatoryChange
+subfrmLC.subfrmBeneficiaryCertificate.txtDaysAfterShipment,subfrmBeneficiaryCertificate,days after shipment.,numericEdit,,,,,,readOnly,visible,none,change:changeUpper; change:lengthLimit(2)
+subfrmLCFoot.subfrmInvoice.chkSignedCommercialInvoice,subfrmInvoice,Signed commercial invoice in:,checkButton,,,1; 0; 2,,,open,visible,none,change:accessChange; change:mandatoryChange; ready ($form):accessChange; ready ($form):mandatoryChange
+subfrmLCFoot.subfrmInvoice.txtSignedOriginals,subfrmInvoice,originals and,textEdit,,,,,,readOnly,visible,none,change:changeUpper; change:lengthLimit(2); change:validateRegularExpNumeric; exit:plusNumeric
+subfrmLCFoot.subfrmInvoice.txtSignedCopies,subfrmInvoice,copies,textEdit,,,,,,readOnly,visible,none,change:changeUpper; change:lengthLimit(2); change:validateRegularExpNumeric; exit:plusNumeric
+subfrmLCFoot.subfrmInvoice.chkPackingList,subfrmInvoice,Packing list in:,checkButton,,,1; 0; 2,,,open,visible,none,change:accessChange; change:mandatoryChange; ready ($form):accessChange; ready ($form):mandatoryChange
+subfrmLCFoot.subfrmInvoice.txtPackingListOriginals,subfrmInvoice,originals and,textEdit,,,,,,readOnly,visible,none,change:changeUpper; change:lengthLimit(2); change:validateRegularExpNumeric; exit:plusNumeric
+subfrmLCFoot.subfrmInvoice.txtPackingListCopies,subfrmInvoice,copies,textEdit,,,,,,readOnly,visible,none,change:changeUpper; change:lengthLimit(2); change:validateRegularExpNumeric; exit:plusNumeric
+subfrmLCFoot.subfrmInvoice.chkWeightNote,subfrmInvoice,Weight Note in:,checkButton,,,1; 0; 2,,,open,visible,none,change:accessChange; change:mandatoryChange; ready ($form):accessChange; ready ($form):mandatoryChange
+subfrmLCFoot.subfrmInvoice.txtWeightNoteOriginals,subfrmInvoice,originals and,textEdit,,,,,,readOnly,visible,none,change:changeUpper; change:lengthLimit(2); change:validateRegularExpNumeric; exit:plusNumeric
+subfrmLCFoot.subfrmInvoice.txtWeightNoteCopies,subfrmInvoice,copies,textEdit,,,,,,readOnly,visible,none,change:changeUpper; change:lengthLimit(2); change:validateRegularExpNumeric; exit:plusNumeric
+subfrmLCFoot.subfrmInvoice.chkCertificateOfOrigin,subfrmInvoice,Certificate of Origin in:,checkButton,,,1; 0; 2,,,open,visible,none,change:accessChange; change:mandatoryChange; ready ($form):accessChange; ready ($form):mandatoryChange
+subfrmLCFoot.subfrmInvoice.txtCertificateOfOriginInOriginals,subfrmInvoice,originals and,textEdit,,,,,,readOnly,visible,none,change:changeUpper; change:lengthLimit(2); change:validateRegularExpNumeric; exit:plusNumeric
+subfrmLCFoot.subfrmInvoice.txtCertificateOfOriginCopies,subfrmInvoice,"copies,",textEdit,,,,,,readOnly,visible,none,change:changeUpper; change:lengthLimit(2); change:validateRegularExpNumeric; exit:plusNumeric
+subfrmLCFoot.subfrmInvoice.txtCertificateOfOriginCountry,subfrmInvoice,showing country of origin as,textEdit,35,,,,,readOnly,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLCFoot.subfrmOtherDoc.chkBeneficiaryCertificate,subfrmOtherDoc,Other documents:,checkButton,,,1; 0; 2,,,open,visible,none,change:accessChange; change:mandatoryChange; ready ($form):accessChange; ready ($form):mandatoryChange
+subfrmLCFoot.subfrmOtherDoc.txtOtherDoc,subfrmOtherDoc,,textEdit,70,,,,1,readOnly,visible,none,change:changeUpper; change:toUpperCase; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLCFoot.subfrmOtherDoc.txtOtherDoc1,subfrmOtherDoc,,textEdit,70,,,,,readOnly,visible,none,change:changeUpper; change:toUpperCase; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLCFoot.subfrmGoodsDescription.txtGoodsDescription,subfrmGoodsDescription,,textEdit,6500,,,yes,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLCFoot.subfrmAdditionalCond.txtAdditionalCond,subfrmAdditionalCond,,textEdit,6500,,,,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmBankCharges.chkBankCharges,subfrmDetails,All Bank Charges are for account of: *,checkButton,,,1; 0; 2,,,open,visible,none,change:accessChange; change:mandatoryChange; ready ($form):accessChange; ready ($form):mandatoryChange
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmBankCharges.radChargeAccount,subfrmDetails,,radio group,,,"Beneficiary, except charges at DC Issuing Bank's counter=LAB; Applicant (including all charges incurred inside and outside of=LAA",,1,readOnly,visible,none,change:mandatoryChange
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmReimbursementInstructions.subfrmReimbursementInstructions,subfrmDetails,Pay upon receipt of documents at the Bank Ltd's counters in Singapore,checkButton,,,1; 0; 2,,,open,visible,none,
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmConfirmation.chkConfirmation,subfrmDetails,Confirmation required,checkButton,,,1; 0; 2,,,open,visible,none,change:accessChange; change:mandatoryChange
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmConfirmation.radioButtonList,subfrmDetails,,radio group,,,Applicant=LID; Beneficiary=LIC,,1,readOnly,visible,none,change:mandatoryChange
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.chkTrustReceipts,subfrmDetails,Please provide us with post-shipment financing under Documentary Credit:,checkButton,,,1; 0; 2,,,open,visible,none,change:accessChange; change:mandatoryChange; ready ($form):accessChange; ready ($form):mandatoryChange
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.radTrustReceipts,subfrmDetails,,radio group,,,"SGD financing, or=1; Foreign Currency Financing in=2; Apply Forward Contract No:=3",,1,open,visible,none,
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.txtForgeign,subfrmDetails,,textEdit,20,,,,1,readOnly,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value); initialize:accessChange
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.txtApplyForward,subfrmDetails,,textEdit,20,,,,1,readOnly,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value); initialize:accessChange
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.#subform.txtApplyForward,subfrmDetails,,textEdit,20,,,,,open,visible,none,
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmSettlementInstructions.#subform.chkBTB,subfrmDetails,,checkButton,,,1; 0; 2,,,open,visible,once,
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmPay.subfrmPay,subfrmDetails,T/T reimbursement allowed,checkButton,,,1; 0; 2,,,open,visible,none,
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmIssuanceCharges.chkDebit,subfrmDetails,Please debit all DC issuance charges to our account,checkButton,,,1; 0; 2,,,readOnly,visible,none,
+subfrmLCFoot.subfrmDetails.subfrmOne.subfrmIssuanceCharges.txtWithyou,subfrmDetails,with you.,textEdit,17,,,yes,,open,visible,none,change:changeUpper; change:validateRegularExpChange(AlphaNumericSwift.value)
+subfrmLCFoot.subfrmDetails.subfrmTwo.subfrmSignature.txtSignature,subfrmDetails,Authorised Person(s) & Company Stamp,textEdit,,,,,,readOnly,visible,none,
+subfrmOthers.btnPrint,subfrmOthers,Confirm & Print Form,button,,,,,,open,visible,none,click:checkSum; click:dateFormatChangeMainPage; click:radioMandatoryCheck; click:selectMandaotoryField; click:setMandatoryBackColor
+subfrmOthers.btnSave,subfrmOthers,Save,button,,,,,,open,visible,none,
+subfrmOthers.PaperFormsBarcode2,subfrmOthers,21125535-1c2f-4aca-a094-809765263173,barcode,,,,,,readOnly,visible,none,
+subfrmOthers.PaperFormsBarcode1,subfrmOthers,65976be1-ce8d-4c85-99e9-0f1c56675118,barcode,,,,,,readOnly,visible,none,
+subfrmOthers.PaperFormsBarcode4,subfrmOthers,65976be1-ce8d-4c85-99e9-0f1c56675118,barcode,,,,,,readOnly,visible,none,
+subfrmOthers.PaperFormsBarcode3,subfrmOthers,21125535-1c2f-4aca-a094-809765263173,barcode,,,,,,readOnly,visible,none,
+subfrmBarcodeRecord.txtBarcode1,subfrmBarcodeRecord,,textEdit,,,,,,open,hidden,once,
+subfrmBarcodeRecord.txtBarcode2,subfrmBarcodeRecord,,textEdit,,,,,,open,hidden,once,
+subfrmBarcodeRecord.txtBarcode1_1,subfrmBarcodeRecord,,textEdit,,,,,,open,hidden,once,
+subfrmBarcodeRecord.txtBarcode2_1,subfrmBarcodeRecord,,textEdit,,,,,,open,hidden,once,
+subfrmMandatory.txtFieldsList,subfrmMandatory,,textEdit,,,,,,readOnly,visible,once,

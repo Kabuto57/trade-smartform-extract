@@ -1,0 +1,63 @@
+position,content,source_field (under LC. unless noted),encoding,if_empty
+1_01,Record number,(constant),"""1""",
+1_02,CIF number,MainPage.subfrmMain.txtLCCif,as typed (digits),"""0000000"""
+1_03,Applicant name,subfrmLC.subfrmApplicant.txtName,as typed (code comment wrongly says Beneficiary Name),empty
+1_04,Beneficiary name,subfrmLC.subfrmBeneficiary.txtName,as typed,empty
+1_05,Beneficiary address,subfrmLC.subfrmBeneficiary.txtAddress1..3,each non-empty line wrapped in [ ],empty
+1_06,Partial shipment,subfrmLC.subfrmPartialshipment.radPartialShipment,L5Y allowed / L5N not allowed,empty
+1_07,Transhipment,subfrmLC.subfrmPartialshipment.radTranshipment,L6Y allowed / L6N not allowed,empty
+1_08,Currency,subfrmLC.subfrmCreditAmount.drpCurrency,ISO code (e.g. USD),empty
+1_09,Credit amount,subfrmLC.subfrmCreditAmount.txtAmount,raw number with 2 decimals (1250000.00),"""0"""
+1_10,Local LC: inclusive of GST,subfrmLC.subfrmCreditAmount.radGST,GSY if inclusive of GST,empty
+1_11,Tolerance plus %,subfrmLC.subfrmCreditAmount.txtPlusValue,integer 0-99; blanked if the box is locked,"""0"""
+1_12,Tolerance minus %,subfrmLC.subfrmCreditAmount.txtMinusValue,integer 0-99; blanked if the box is locked,"""0"""
+1_13,Price basis,subfrmLC.subfrmPriceBasis.RadioButtonList,FOB=C CFR=B CIF=A FCA=D CIP=G CPT=F Local delivery=O Others=O,empty
+1_14,Price basis: other text,subfrmLC.subfrmPriceBasis.txtOthers,as typed,empty
+1_15,Shipment from: type,subfrmLC.subfrmShipmentFrom.drpPortOfLoading,44E port of loading/airport of departure; 44A dispatch from/place of taking in charge/place of receipt,empty
+1_16,Port of loading,subfrmLC.subfrmShipmentFrom...subfrmPortOfLoad.txtLoading1+2,two lines joined with a space,empty
+1_17,Dispatch / taking in charge / receipt place,...subfrmDispatchfrom / subfrmPlaceOfTakingInCharge / subfrmPlaceOfReceipt (first filled),two lines joined with a space,empty
+1_18,(unused: commented out in code),,,always empty
+1_19,(unused: commented out in code),,,always empty
+1_20,Shipment to: type,subfrmLC.subfrmShipmentTo.drpPortOfDischarge,44F port of discharge/airport of destination; 44B transportation to/final destination/place of delivery,empty
+1_21,Port of discharge,subfrmLC.subfrmShipmentTo...subfrmDischarge.txtDischarge1+2,two lines joined with a space,empty
+1_22,Transportation to / final destination / place of delivery,...(first filled of the three),two lines joined with a space,empty
+1_23,(unused),,,always empty
+1_24,(unused),,,always empty
+1_25,Latest shipment date,subfrmLC.subfrmShipmentDate.txtDate,YYYY-MM-DD (code comment says ddmmyyyy),empty
+1_26,Expiry date,subfrmLC.subfrmDateOfExpiry.txtDate,YYYY-MM-DD,empty
+1_27,Presentation period (days),subfrmLC.subfrmPresentation.txtPeriod,integer,empty
+1_28,DC available with (reserved),(constant),,always empty
+1_29,By payment (reserved),(constant),,always empty
+1_30,Draft (reserved),(constant),,always empty
+1_31,Draft: sight or not,subfrmLC.subfrmDrafts.sufrmDraft.radDrafts,Sight=Y; Term=N; Date=N,empty
+1_32,Term days,subfrmLC.subfrmDrafts.sufrmDraft.txtTerm,integer (only when Term),"""0"""
+1_33,Term days after,subfrmLC.subfrmDrafts.sufrmDraft.txtDaysAfter,as typed (e.g. BILL OF LADING DATE),empty
+1_34,Mode of advising,subfrmLC.subfrmModeOfAdvising.RadioButtonList,Full Swift=S; Airmail with brief Swift=S; Courier with brief Swift=S; Registered airmail=A; Courier service=U,empty
+1_35,(reserved),(constant),,always empty
+1_36,Draft date,subfrmLC.subfrmDrafts.sufrmDraft.txtDate,YYYY-MM-DD (only when Date),empty
+2_01,Record number,(constant),"""2""",
+2_02,Applicant address,subfrmLC.subfrmApplicant.txtAddress1..3,each line wrapped in [ ],empty
+2_03,Transferee / 2nd beneficiary name,subfrmLC.subfrm3PartyBeneficiary.txtName,as typed,empty
+2_04,Transferee address,subfrmLC.subfrm3PartyBeneficiary.txtAddress1..3,each line wrapped in [ ],empty
+2_05,Advising bank name (bank use),subfrmLC.subfrmForBankUse.subfrmAdvisingBank.txtName,as typed,empty
+2_06,Advising bank address (bank use),subfrmLC.subfrmForBankUse.subfrmAdvisingBank.txtAddress1..3,each line wrapped in [ ],empty
+2_07,Bill of lading clause,subfrmLC.subfrmDrafts (chkFullSet + radConsignee + txtFullSet + txtNotifyParty + radFreight),generated sentence wrapped to 64-char lines joined by {},empty
+2_08,Air waybill clause,subfrmLC.subfrmOriginalAirWaybill (chk + radioButtonList + txtNotifyParty),generated sentence wrapped to 64-char lines,empty
+2_09,(reserved: HK only),(constant),,always empty
+2_10,(reserved: HK only),(constant),,always empty
+2_11,(reserved: HK only),(constant),,always empty
+2_12,Confirmation required,subfrmLCFoot...subfrmConfirmation.chkConfirmation,L9Y ticked / L9N not ticked,L9N
+2_13,Bank charges account,subfrmLCFoot...subfrmBankCharges.radChargeAccount,LAA applicant / LAB beneficiary,empty
+2_14,Confirmation charges for,subfrmLCFoot...subfrmConfirmation.radioButtonList,LID applicant / LIC beneficiary,empty
+3_01,Record number,(constant),"""3""",
+3_02,Delivery order clause,subfrmLC.subfrmTransportDocumentsByDO (chk + originals + copies + countersigned/signature choices),generated sentence wrapped to 64-char lines,empty
+3_03,Insurance clause,subfrmLC.subfrmInsurance (chkInsurance; cover no.),fixed sentence (110% of invoice value; ICC (A) war and strikes) wrapped to 64-char lines,empty
+3_04,Beneficiary's certificate clause,subfrmLC.subfrmBeneficiaryCertificate (fax/mail/courier ticks + days),generated sentence wrapped to 64-char lines,empty
+3_05,Signed commercial invoice,subfrmLCFoot.subfrmInvoice (chk + originals + copies),"""+ SIGNED COMMERCIAL INVOICES IN n ORIGINALS AND n COPIES.""",empty
+3_06,Packing list,subfrmLCFoot.subfrmInvoice (chk + originals + copies),"""+ PACKING LIST IN n ORIGINALS AND n COPIES.""",empty
+3_07,Weight note,subfrmLCFoot.subfrmInvoice (chk + originals + copies),"""+ WEIGHT NOTE IN …""",empty
+3_08,Certificate of origin,subfrmLCFoot.subfrmInvoice (chk + originals + copies + country),"""+ CERTIFICATE OF ORIGIN IN n ORIGINAL AND n COPY, SHOWING COUNTRY OF ORIGIN AS X.""",empty
+3_09,Other documents,subfrmLCFoot.subfrmOtherDoc.txtOtherDoc (+ txtOtherDoc1),as typed,empty
+4_01,Record number,(constant),"""4""",
+4_02,Description of goods,subfrmLCFoot.subfrmGoodsDescription.txtGoodsDescription,FIRST 400 CHARACTERS ONLY (field allows 6500); wrapped to 64-char lines joined by {},"""|"""
+4_03,Additional conditions,subfrmLCFoot.subfrmAdditionalCond.txtAdditionalCond,FIRST 600 CHARACTERS ONLY (field allows 6500); Enter becomes {},"""|"""
