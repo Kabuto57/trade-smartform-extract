@@ -1,4 +1,36 @@
-# Trade Smart Form: extracted XFA template and scripts
+# Trade Smart Form: reverse-engineered
+
+Everything from reverse-engineering a bank's vendor-built trade smart form (LC application in detail): the extracted XFA template and all 1,281 scripts, the tools that extract and re-check them, the LC system design, the PDF417 barcode format, and the diagrams used in the write-up. Anonymised; the original PDF is not included.
+
+## Start here
+
+| Read | What it gives you |
+|---|---|
+| [docs/how-the-bank-smart-form-is-built.md](docs/how-the-bank-smart-form-is-built.md) | The whole form explained: layers, navigation, fields, scripts, barcodes (corrections to it are listed at the end of this README) |
+| [docs/LC-system-design.md](docs/LC-system-design.md) | The LC application in detail: every field, validation, mandatory rule, calculation, and the 4 PDF417 records position by position |
+| [docs/lc/](docs/lc/) | The same as data: `lc-fields.csv`, `lc-conditional-rules.csv`, `lc-barcode-layout.csv`, plus a sample input and the exact barcode text the form's own script produced for it |
+| [diagrams/img/](diagrams/img/) | The diagrams: 5 layers, customer-to-Trade-Ops flow, how a field becomes mandatory, how a PDF417 is built, PDF417 parts, one codeword measured from a real barcode, a record's positions, As-Is / To-Be swim lanes |
+| [libraries/](libraries/), [events/](events/), [xfa/](xfa/) | The extracted code itself |
+
+## Diagrams
+
+`diagrams/img/` holds the pictures; `diagrams/*.py` draws them (Python 3, `pip install pillow zxing-cpp`; macOS Arial fonts):
+
+```bash
+cd diagrams
+python anatomy.py      # PDF417 codeword, text-to-bars steps, record positions (img/a-*.png)
+python swimlanes.py    # As-Is / To-Be swim lanes and the comparison table (img/s-*.png)
+```
+
+The codeword picture is measured from a real PDF417, and the script asserts its widths sum to 17 and that its bars give cluster 0 (row 1).
+
+## Run the LC barcode script outside Adobe
+
+`node tools/run_lc_barcode.mjs . docs/lc/sample-lc-input.json` runs the form's own `barcodeScript.LCbarcode()` in Node on `docs/lc/sample-lc-input.json` and prints the 4 records as JSON (the same values as `docs/lc/sample-lc-output.txt`). This is how the barcode format and its defects were confirmed.
+
+---
+
+## The extraction
 
 Source: a bank's trade-application smart form, `Trade-Smartform.pdf` (Adobe LiveCycle Designer 11.0, saved 14 Apr 2026), extracted 6 Nov 2026 by reading its XFA packets. The PDF opens with an empty user password; no protection was bypassed.
 
@@ -12,7 +44,7 @@ Source: a bank's trade-application smart form, `Trade-Smartform.pdf` (Adobe Live
 | `libraries/` | The 5 shared script objects (`form1.variables`), verbatim: `controlScript.js` (79 functions), `barcodeScript.js` (21), `fieldsCheck.js` (6), `currencyConvertor.js` (5), `errorMessage.js` (3 strings) |
 | `events/` | All 1,276 event and calculate scripts, one file per section (`LC.js`, `DBRP.js`, `MainPage.js`, `pageSet.js` for the toolbar, `form1.js` for form-level events). Each script is headed `// ===== <object path> :: <event> =====` |
 | `index.csv` | One row per event script: section, object path, event, language, line count, shared-library functions it calls |
-| `tools/` | `extract_xfa.py` (PDF to `xfa/`), `extract_scripts.py` (`xfa/template.xml` to `libraries/`, `events/`, `index.csv`), `verify_doc_claims.py` (recounts the template and checks the analysis doc's figures) |
+| `tools/` | `extract_xfa.py` (PDF to `xfa/`), `extract_scripts.py` (`xfa/template.xml` to `libraries/`, `events/`, `index.csv`), `verify_doc_claims.py` (recounts the template and checks the analysis doc's figures), `run_lc_barcode.mjs` (runs the LC barcode script in Node) |
 
 Total: 5 + 1,276 = **1,281 scripts**, all JavaScript (no FormCalc). The original PDF is not stored here.
 
@@ -25,7 +57,7 @@ python tools/extract_scripts.py xfa/template.xml .
 python tools/verify_doc_claims.py xfa/template.xml
 ```
 
-Analysis of how the form works: [How the bank's Trade Smart Form is built](https://github.com/Kabuto57/pdf-template-studio/blob/docs/smart-form-analysis/docs/how-the-bank-smart-form-is-built.md) (in PDF Template Studio).
+Analysis of how the form works: [docs/how-the-bank-smart-form-is-built.md](docs/how-the-bank-smart-form-is-built.md).
 
 ## Is the doc "How the bank's Trade Smart Form is built" correct?
 
