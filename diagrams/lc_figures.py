@@ -271,3 +271,135 @@ def shift():
 if __name__ == "__main__":
     script_simple(); script_twice(); positions(); scan(); shift()
     print("done")
+
+
+# ---------------------------------------------------------------- barcode code, commented
+YELLOW = "#F2C94C"
+
+
+def _measure_mono(t):
+    return ImageDraw.Draw(Image.new("RGB", (1, 1))).textlength(t, font=MONO)
+
+
+def annotated(name, head, sub, path, ranges, notes, foot=None):
+    """Verbatim code from `path` (line ranges, '...' between them) with my explanation under the lines in `notes`.
+    notes = {absolute line number: explanation}. Vendor code is white/green; my explanations are yellow."""
+    src = open(os.path.join(EX, path)).read().split("\n")
+    for n in notes:
+        assert any(a <= n <= b for a, b in ranges), (name, n)
+    rows = []                                    # (kind, line number or None, text)
+    for k, (a, b) in enumerate(ranges):
+        if k:
+            rows.append(("gap", None, "    ..."))
+        for n in range(a, b + 1):
+            rows.append(("code", n, src[n - 1].replace("\t", "    ")))
+            if n in notes:
+                rows.append(("note", None, notes[n]))
+    f_note = bold(22)
+    drawn = []
+    for kind, n, text in rows:
+        if kind == "note":
+            for i, l in enumerate(wrap(text, f_note, W - 260)):
+                drawn.append(("note", None, ("▲ " if i == 0 else "   ") + l))
+        else:
+            parts = wrap(text, MONO, W - 190) if text.strip() else [""]
+            hard = []
+            for q in parts:                          # long unbroken code: split by characters
+                q = q.lstrip() if hard else q
+                while _measure_mono(q) > (W - 190 if not hard else W - 290):
+                    lim = W - 190 if not hard else W - 290
+                    k = len(q)
+                    while _measure_mono(q[:k]) > lim: k -= 1
+                    hard.append(q[:k]); q = q[k:]
+                hard.append(q)
+            parts = hard
+            for i, p in enumerate(parts):
+                drawn.append((kind, n if i == 0 else None, p if i == 0 else "        " + p.lstrip()))
+    H = 200 + len(drawn) * 31 + 200
+    img = Image.new("RGB", (W, H), "white"); d = ImageDraw.Draw(img)
+    title(d, head, sub)
+    y0 = 150
+    d.text((40, y0), path + "  ·  white/green = the vendor's code, verbatim  ·  yellow = my explanation", font=bold(20), fill="#616161")
+    y0 += 36
+    d.rounded_rectangle([40, y0, W - 40, y0 + len(drawn) * 31 + 24], radius=10, fill=BG)
+    y = y0 + 12
+    for kind, n, text in drawn:
+        if kind == "note":
+            d.rectangle([44, y - 1, W - 44, y + 29], fill="#3A3320")
+            d.text((150, y + 2), text, font=f_note, fill=YELLOW)
+        else:
+            if n:
+                d.text((52, y + 1), f"{n:>4}", font=MONO, fill=NUM)
+            col = COMMENT if text.strip().startswith("//") else ("#9E9E9E" if kind == "gap" else FG)
+            d.text((130, y + 1), text, font=MONO, fill=col)
+        y += 31
+    y += 40
+    if foot:
+        for l in wrap(foot, bold(24), W - 80):
+            d.text((40, y), l, font=bold(24), fill="#424242"); y += 34
+    img.crop((0, 0, W, y + 20)).save(os.path.join(IMG, name))
+
+
+def barcode_code():
+    L = "events/LC.js"; B = "libraries/barcodeScript.js"
+    p = find(L, "form1.LC.subfrmOthers.btnPrint  ::  click")
+    annotated("l-code-1-print.png", "Barcode code 1: the Confirm & Print button",
+              "The LC's print button. Everything about the barcodes starts here.", L,
+              [(p, p + 5), (p + 26, p + 38)], {
+                  p: "Header added by the extract: the LC's Print button, 'click' event.",
+                  p + 1: "An older direct call to LCbarcode(), switched off with //. The live call is further down.",
+                  p + 2: "Flag 'printing now' (reset to 0 at the end).",
+                  p + 26: "List every field that is mandatory right now.",
+                  p + 28: "Paint empty mandatory fields red; returns how many are still empty.",
+                  p + 29: "BUILD THE 4 BARCODE TEXTS (next pictures). Runs even if fields are missing.",
+                  p + 32: "0 empty mandatory fields: allowed to print.",
+                  p + 34: "A reference number for the printout (a SHA-1 hash of date, time and a random number).",
+                  p + 36: "Print: page 0 to the last page, with the print dialog shown.",
+                  p + 38: "Otherwise: show the 'mandatory fields are empty' message and print nothing.",
+              }, "So the barcodes are only built when the customer presses this button. An emailed PDF that was never printed has old or empty barcodes (defect 10).")
+    g = find(B, "function GetBarData(varData, varPipe)")
+    annotated("l-code-2-getbardata.png", "Barcode code 2: GetBarData(), the helper behind every value",
+              "Called for almost every position: turns one answer into 'answer|'.", B, [(g, g + 13)], {
+                  g: "varData = one answer; varPipe = true means 'add a | after it'.",
+                  g + 4: "Empty answer: nothing. This is why empty answers leave an empty slot: ||",
+                  g + 6: "Otherwise: the answer exactly as typed (no names, no quotes, no escaping).",
+                  g + 9: "Add the separator. A | typed inside an answer would add a false position (the SWIFT key-press check blocks | in the boxes that use it).",
+              })
+    s = find(B, "function LCbarcode()")
+    annotated("l-code-3-record1.png", "Barcode code 3: LCbarcode() builds record 1, one position at a time",
+              "The first 6 of record 1's 36 positions. The comments with 1_02, 1_03 ... are the vendor's position numbers.", B,
+              [(s, s + 48)], {
+                  s + 2: "First, clear the old barcode texts.",
+                  s + 8: "Position 1: the record number. The text starts '1|'.",
+                  s + 11: "Position 2: CIF number, from the main page. No CIF: seven zeros.",
+                  s + 17: "Position 3. The vendor's comment says 'Beneficiary Name', but the field read is the APPLICANT's name (defect 8).",
+                  s + 22: "Position 4: the beneficiary's name.",
+                  s + 28: "Position 5: each address line wrapped in [ ] and joined: [LINE 1][LINE 2][LINE 3].",
+                  s + 41: "Position 6: the 'allowed' radio button ticked becomes the code L5Y; 'not allowed' becomes L5N.",
+                  s + 48: "Every position is added the same way: the ORDER of these blocks is the only thing that says what each value means.",
+              }, "LCbarcode() is about 690 lines and builds all 4 records like this, then puts record 1 into the hidden field txtBarcode1 (line 528).")
+    r = find(B, "///////////////////barcode 4////////////////////////////////////")
+    annotated("l-code-4-record4.png", "Barcode code 4: record 4 cuts the goods description to 400 characters",
+              "The end of LCbarcode(): goods description and additional conditions.", B, [(r, r + 35)], {
+                  r + 5: "substr(0,400): keep only the first 400 characters. The box accepts 6,500, so the rest is lost (defect 1).",
+                  r + 7: "strChop: cut the text into 64-character lines joined by {}.",
+                  r + 15: "Additional conditions: cut to 600 characters the same way.",
+                  r + 24: "Record 4 starts '4|'.",
+                  r + 27: "Position 4_02: the (shortened) goods description.",
+                  r + 31: "Position 4_03: the (shortened) additional conditions.",
+                  r + 34: "Put record 4 into the hidden field txtBarcode2_1, which one of the 4 barcode objects reads.",
+              }, "Nothing warns the customer or Trade Ops that the text was cut: the PDF keeps the full text, the barcode does not.")
+    c = find(L, "form1.LC.subfrmOthers.PaperFormsBarcode2  ::  calculate")
+    annotated("l-code-5-draw.png", "Barcode code 5: the script on the barcode itself",
+              "Written by Adobe Designer, not by the vendor. One of these sits on each of the 4 LC barcodes.", L, [(c, c + 26)], {
+                  c: "The barcode object, 'calculate' event: Adobe re-runs it whenever a value it reads changes.",
+                  c + 8: "Read the hidden text field. Note: the object named PaperFormsBarcode2 shows txtBarcode1 (record 1): names and order don't match.",
+                  c + 17: "Hand the text to the barcode. Adobe Reader draws it as PDF417 bars (only with Adobe's BarcodePlaintext right).",
+                  c + 21: "No text yet: a blank (a space), so the barcode draws empty.",
+                  c + 24: "Very old Reader (before 7.05) would also get a blank; switched off here (false above).",
+              }, "So the chain is: Print button → LCbarcode() → hidden text fields → these 4 calculate scripts → PDF417 bars on the last page.")
+
+
+if __name__ == "__main__":
+    barcode_code()
+    print("code figures done")

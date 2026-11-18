@@ -9,7 +9,7 @@ Everything from reverse-engineering a bank's vendor-built trade smart form (LC a
 | [docs/how-the-bank-smart-form-is-built.md](docs/how-the-bank-smart-form-is-built.md) | The whole form explained: layers, navigation, fields, scripts, barcodes (corrections to it are listed at the end of this README) |
 | [docs/LC-system-design.md](docs/LC-system-design.md) | The LC application in detail: every field, validation, mandatory rule, calculation, and the 4 PDF417 records position by position |
 | [docs/lc/](docs/lc/) | The same as data: `lc-fields.csv`, `lc-conditional-rules.csv`, `lc-barcode-layout.csv`, plus a sample input and the exact barcode text the form's own script produced for it |
-| [diagrams/img/](diagrams/img/) | The diagrams: two real LC scripts explained line by line (`l-script-1.png`, `l-script-2.png`: one rule written in 4 scripts that disagree), LC answers to barcode positions, 5 layers, customer-to-Trade-Ops flow, how a field becomes mandatory, how a PDF417 is built, PDF417 parts, one codeword measured from a real barcode, a record's positions, As-Is / To-Be swim lanes |
+| [diagrams/img/](diagrams/img/) | The diagrams: the LC barcode code step by step with explanations (`l-code-1-print.png` … `l-code-5-draw.png`), two real LC scripts explained line by line (`l-script-1.png`, `l-script-2.png`: one rule written in 4 scripts that disagree), LC answers to barcode positions, 5 layers, customer-to-Trade-Ops flow, how a field becomes mandatory, how a PDF417 is built, PDF417 parts, one codeword measured from a real barcode, a record's positions, As-Is / To-Be swim lanes |
 | [libraries/](libraries/), [events/](events/), [xfa/](xfa/) | The extracted code itself |
 
 ## Diagrams
